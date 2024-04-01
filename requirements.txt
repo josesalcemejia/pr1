@@ -1,7 +1,0 @@
- ** herramientas de desarrollo **
-
-
-git version 2.44.0.windows.1
-Python 3.12.2
-Node v20.11.1
-browser-sync version 3.0.2

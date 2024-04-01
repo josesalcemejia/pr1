@@ -373,7 +373,7 @@
 		<section class="header">
 
 			<header class="header">
-				<!-- <h1>ASTRASALUD</h1> -->
+				<!-- <h1>CARACTERIZACIÓN</h1> -->
 
 			</header>
 
@@ -385,9 +385,14 @@
 
 		<form class="form_cuestionario" id="form_cuestionario" action="#" method="POST">
 
+			<h1>CARACTERIZACIÓN</h1>
+
+
 			<div class="">
+
 				<span class="date" id="date"></span></br>
 				<span class="hora" id="hora"></span>
+
 			</div>
 
 			
@@ -405,8 +410,8 @@
 				<label class="label cuestionario1 obligatoria" for="departamento" >Departamento</label>
 				<input type="text" id="departamento" name="departamento" value="Norte de Santander" required>
 
-				<label for="uzpe" class="cuestionario1 obligatoria" class="">UZPE (Unidad Zonal de Planeación y Evaluación)</label>
-				<input type="text" id="uzpe" name="uzpe" value="" placeholder="UPZE100" required>
+				<!-- <label for="uzpe" class="cuestionario1 obligatoria" class="">UZPE (Unidad Zonal de Planeación y Evaluación)</label>
+				<input type="text" id="uzpe" name="uzpe" value="" placeholder="UPZE100" required> -->
 
 
 
@@ -487,7 +492,7 @@
 
 
 				<label class="label cuestionario1" for="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion"="true" value="" placeholder="calle 0 # 6-07">
+				<input type="text" name="direccion" id="direccion"="true" value="" placeholder="Avenida 9 1 3">
 
 
 
@@ -517,11 +522,15 @@
 				<label for="Ubicación_del_hogar" class="cuestionario1">Ubicación del hogar (cuando no se cuenta con
 					nomenclatura, punto de referencia)</label>
 				<input type="text" id="Ubicación_del_hogar" name="Ubicación_del_hogar" value=""
-					placeholder="cerca a la universidad de pamplona">
+					placeholder="Junto al parque">
 
-				<label for="numero_identificaion_hogar" class="cuestionario1">Número de Identificación deL hogar</label>
+
+
+				<!-- <label for="numero_identificaion_hogar" class="cuestionario1">Número de Identificación deL hogar</label>
 				<input type="text" id="numero_identificaion_hogar" name="numero_identificaion_hogar" value=""
-					placeholder="H">
+					placeholder="H"> -->
+
+
 
 				<label for="numero_identificaion_familia" class="cuestionario1">Número de Identificación de la
 					familia</label>
@@ -551,7 +560,7 @@
 				<input type="number" id="numero_familias" name="numero_familias" value="" placeholder="2" required>
 
 				<label for="numero_personas" class="cuestionario1 obligatoria">Número de personas en la vivienda</label>
-				<input type="number" id="numero_personas" name="numero_personas" value="" placeholder="6" required>
+				<input type="number" id="numero_personas" name="numero_personas" value="" placeholder="7" required>
 
 
 			</section>
@@ -574,7 +583,7 @@
 				<input type="text" id="numero_indentificaion_salud" name="numero_indentificaion_salud" value=""
 					placeholder="EBS001" required>
 
-
+				
 				<label for="prestador_primario" class="cuestionario1 obligatoria">Prestador primario / Organismo de adscripción del
 					EBS</label>
 				<select type="text" name="prestador_primario" id="prestador_primario" required>
@@ -592,6 +601,17 @@
 
 
 				</select>
+
+
+				<label for="reponsable_que_realiza_caracterizacion" class="cuestionario1 obligatoria">Responsable: <span class="aclaracion"> de la evaluación en salud - caracterización</span></label>
+				<input type="text" id="reponsable_que_realiza_caracterizacion" name="reponsable_que_realiza_caracterizacion" value=""
+				placeholder="Pedro Perez" required>
+
+
+				<label for="codigo_ficha" class="cuestionario1 obligatoria">Código de la ficha</label>
+				<input type="text" id="codigo_ficha" name="codigo_ficha" value="" placeholder="CF001" required>
+
+
 
 
 				<h4>2.1 Detalle de personal de los EBS</h4>
@@ -640,8 +660,7 @@
 
 				</select>
 
-				<label for="codigo_ficha" class="cuestionario1 obligatoria">Código de la ficha</label>
-				<input type="text" id="codigo_ficha" name="codigo_ficha" value="" placeholder="CF001" required>
+				
 
 
 				<label for="fecha_de_registro" class="cuestionario1">Fecha de registro</label>
@@ -1669,6 +1688,25 @@
 								name="hay_cuidador_de_adutos_o_menores" value="no" required>
 						</div>
 
+						<!--  -->
+
+						<label for="escala_zarit" class="label cuestionario4 obligatoria">Si la respuesta anterior es SI aplicar ZARIT y registre aqui el resultado - <span class="aclaracion">para determinar si se requiere intervención individual o familiar</span></label>
+						<select type="text" id="escala_zarit" name="escala_zarit" value="" placeholder="">
+
+							<option value="none" selected disabled>Seleccione Una</option>
+
+							<option value="Ausencia de sobrecarga (si es menor o igual a 46)">1. Ausencia de sobrecarga (si es menor o igual a 46)</option>
+							<option value="Sobrecarga ligera (si esta entre 47 y 55)">2. Sobrecarga ligera (si esta entre 47 y 55)</option>
+							<option value="Sobrecarga intensa (si es mayor o igual a 56)">3. Sobrecarga intensa (si es mayor o igual a 56)</option>
+
+						
+
+
+						</select>
+
+
+						<!--  -->
+
 
 						<label for="ecomapa" class="label cuestionario4 obligatoria">Ecomapa</label>
 						<select type="text" id="ecomapa" name="ecomapa" value="" placeholder="" required>
@@ -1918,9 +1956,31 @@
 						</div>
 
 
+						<!--  -->
+
+
+						<label for="" class="cuestionario4">Familia en situación de vulneravilidad social <span class="aclaracion">(Consumo de SPA, explotación sexual, trabajo infantil, conflictos interpersonales, violencia, entre otros)</span></label>
+
+						<div class="group_radio">
+							<label class="label radio"
+								for="familia_en_situacion_vulnerabilidad_social_si">SI</label>
+							<input type="radio" id="familia_en_situacion_vulnerabilidad_social_si"
+								class="radio" name="familia_en_situacion_vulnerabilidad_social" value="si">
+							<label class="label radio"
+								for="familia_en_situacion_vulnerabilidad_social_no">NO</label>
+							<input type="radio" id="familia_en_situacion_vulnerabilidad_social_no"
+								class="radio" name="familia_en_situacion_vulnerabilidad_social" value="no">
+						</div>
+
+						<!--  -->
+
+
+
+
+
 
 						<label for="" class="cuestionario4">Familia con prácticas de cuidado de salud críticas de varios
-							de sus integrantes que ponen en riesgo o han afectado en la salud</label>
+							de sus integrantes que ponen en riesgo o han afectado en la salud <span class="aclaracion">Hábitos alimenticios, situaciones de abandono</span></label>
 
 						<div class="group_radio">
 							<label class="label radio" for="familia_con_practicas_de_cuidado_de_salud_si">SI</label>
@@ -1933,16 +1993,64 @@
 
 
 
+
+
+
 						<label for="" class="cuestionario4">Familia con integrantes con antecedentes de Cáncer, HTA,
 							Diabetes, Asma, Enfermedad cardiaca, otra</label>
 
 						<div class="group_radio">
-							<label class="label radio" for="famila_con_antecedentes_de_cancer_si">SI</label>
-							<input type="radio" id="famila_con_antecedentes_de_cancer_si" class="radio"
-								name="famila_con_antecedentes_de_cancer" value="si">
-							<label class="label radio" for="famila_con_antecedentes_de_cancer_no">NO</label>
-							<input type="radio" id="famila_con_antecedentes_de_cancer_no" class="radio"
-								name="famila_con_antecedentes_de_cancer" value="no">
+							<label class="label radio" for="famila_con_antecedentes_de_enfermedad_si">SI</label>
+							<input type="radio" id="famila_con_antecedentes_de_enfermedad_si" class="radio"
+								name="famila_con_antecedentes_de_enfermedad" value="si">
+							<label class="label radio" for="famila_con_antecedentes_de_enfermedad_no">NO</label>
+							<input type="radio" id="famila_con_antecedentes_de_enfermedad_no" class="radio"
+								name="famila_con_antecedentes_de_enfermedad" value="no">
+						</div>
+
+
+
+
+						<label for="" class="cuestionario4">¿Cual?</label>
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_ca" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="Ca">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_ca">1. Ca</label>
+						</div>
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_hta" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="HTA">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_hta">2. HTA</label>
+						</div>
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_diabetes" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="Diabetes">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_diabetes">3. Diabetes</label>
+						</div>
+
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_asma" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="Asma">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_asma">4. Asma</label>
+						</div>
+
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_cardiaca" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="Enfermedad Cardiaca">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_cardiaca">4. Enfermedad Cardiaca</label>
+
+						</div>
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_otra" class="checkbox"
+								name="famila_con_antecedentes_de_enfermedad_cual" value="Otra">
+							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_otra">5. Otra</label>
+							
 						</div>
 
 
@@ -2006,10 +2114,17 @@
 								humanitaria</label>
 						</div>
 
+
+						<div class="group_checkbox">
+							<input type="checkbox" id="como_obtienen_sus_alimentos_salario" class="checkbox"
+								name="como_obtienen_sus_alimentos" value="Salario">
+							<label class="label checkbox" for="como_obtienen_sus_alimentos_salario">9. Salario</label>
+						</div>
+
 						<div class="group_checkbox">
 							<input type="checkbox" id="como_obtienen_sus_alimentos_otro" class="checkbox"
 								name="como_obtienen_sus_alimentos" value="Otro">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_otro">9. Otro</label>
+							<label class="label checkbox" for="como_obtienen_sus_alimentos_otro">10. Otro</label>
 						</div>
 
 
@@ -2026,9 +2141,10 @@
 
 						<h4>4.3 Prácticas o condiciones protectoras para el cuidado de la salud predominantes en la
 							familia</h4>
-
+<!-- 
 						<label for="" class="cuestionario4">Prácticas o condiciones protectoras para el cuidado de la
 							salud predominantes en la familia</label>
+
 
 						<div class="group_radio">
 							<label class="label radio"
@@ -2041,7 +2157,26 @@
 							<input type="radio" id="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud_no"
 								class="radio" name="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud"
 								value="no">
+						</div> -->
+
+
+						<label for="" class="cuestionario4">Hábitos de vida saludable adaptado a las condiciones contextuales y culturales de la familia y sus integrantes</label>
+							
+
+						<div class="group_radio">
+							<label class="label radio"
+								for="habitos_de_vida_saludable_si">SI</label>
+							<input type="radio" id="habitos_de_vida_saludable_si"
+								class="radio" name="habitos_de_vida_saludable"
+								value="si">
+							<label class="label radio"
+								for="habitos_de_vida_saludable_no">NO</label>
+							<input type="radio" id="habitos_de_vida_saludable_no"
+								class="radio" name="habitos_de_vida_saludable"
+								value="no">
 						</div>
+
+
 
 
 						<label for="" class="cuestionario4">Recursos socioemocionales que potencian el cuidado el
@@ -2194,16 +2329,16 @@
 
 
 						<label class="label cuestionario4" for="primer_nombre">Primer nombre</label>
-						<input id="primer_nombre" type="text" name="primer_nombre" value="" placeholder="Carlos">
+						<input id="primer_nombre" type="text" name="primer_nombre" value="" placeholder="JUAN">
 
 						<label class="label cuestionario4" for="segundo_nombre">Segundo nombre</label>
-						<input id="segundo_nombre" type="text" name="segundo_nombre" value="" placeholder="Enrique">
+						<input id="segundo_nombre" type="text" name="segundo_nombre" value="" placeholder="CARLOS">
 
 						<label class="label cuestionario4" for="primer_apellido">Primer apellido</label>
-						<input id="primer_apellido" type="text" name="primer_apellido" value="" placeholder="Mantilla">
+						<input id="primer_apellido" type="text" name="primer_apellido" value="" placeholder="RIVERA">
 
 						<label class="label cuestionario4" for="segundo_apellido">Segundo apellido</label>
-						<input id="segundo_apellido" type="text" name="segundo_apellido" value="" placeholder="Caceres">
+						<input id="segundo_apellido" type="text" name="segundo_apellido" value="" placeholder="CAMPO">
 
 
 						<label for="tipo_documento_persona" class="cuestionario4">Tipo de documento</label>
@@ -2237,7 +2372,7 @@
 
 						<label for="sexo" class="cuestionario4">Sexo</label>
 						<select type="text" name="sexo" id="sexo">
-							<option value="none">Seleccione Una</option>
+							<option value="none" selected disabled>Seleccione Una</option>
 
 							<option value="Hombre">1. Hombre</option>
 							<option value="Mujer">2. Mujer</option>
@@ -2249,7 +2384,7 @@
 
 						<label for="rol_dentro_de_la_familia" class="cuestionario4">Rol dentro de la familia</label>
 						<select type="text" name="rol_dentro_de_la_familia" id="rol_dentro_de_la_familia">
-							<option value="none">Seleccione Una</option>
+							<option value="none" selected disabled>Seleccione Una</option>
 
 							<option value="Jefe de familia">1. Jefe de familia</option>
 							<option value="conyuge">2. Cónyuge</option>
