@@ -1,253 +1,178 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-
 <head>
 
-	<title>CUESTIONARIO</title>
+	<title>CUESTIONARIO ODONTOLOGICO</title>
 	<!-- <link rel="stylesheet" type="text/css" href="./styles.css"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="icon" type="icon" href="./images/logo_astrasalud.jpg">
 
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-		}
+<style type="text/css">
+	* { 
+	 padding: 0;
+	 margin: 0;
+	}
+	html, body {
+		width: 100%;
 
-		html,
-		body {
-			width: 100%;
-
-		}
-
-		body {
-			display: flex;
-			justify-content: center;
-		}
-
-		main {
-			width: 900px;
-			height: auto;
-			margin-left: auto;
-			margin-right: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			box-shadow: 0px 0px 25px -15px black;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+	}
+	main {
+		width: 900px;
+	    height: auto;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+		box-shadow: 0px 0px 25px -15px black;
 
 
-		}
+	}
 
-		header {
-			background-image: url("./images/membrete-02.png");
-
-		}
-
-		footer {
-			background-image: url("./images/membrete-03.png");
-		}
+	header {
+		background-image: url("./images/membrete-02.png");
+		
+	}
+	footer {
+		background-image: url("./images/membrete-03.png");
+	}
 
 
 
-		header,
-		footer {
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 941px 200px;
-			
-			padding-left: 30px;
-			padding-right: 30px;
-			color: white;
-			min-width: 400px;
-			height: 200px;
-			border-radius: 0 0 10px 10px;
+	header,footer {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 941px 200px;
+		color: red;
+		padding-left: 30px;
+		padding-right: 30px;
+		color: white;
+		min-width: 400px;
+		height: 200px;
+		border-radius: 0 0 10px 10px;
 
-		}
-
-
-
-		header h1 {
-			padding-top: 10px;
-			text-align: left;
-
-		}
+	}
 
 
 
-		.form_cuestionario1 {
-			margin-top: 10px;
-			padding: 10px;
-
-
-		}
-
-		#form_cuestionario {
-			min-width: 400px;
-			margin-left: 10px;
-			margin-left: 10px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			color: black;
-
-		}
-
-		label.cuestionario1,
-		label.cuestionario2,
-		label.cuestionario3,
-		label.cuestionario4
-		 {
-			display: block;
-			width: 100%;
-			margin-top: 20px;
-			font-size: 20px
-		}
-
-		label.cuestionario1,
-		label.cuestionario2,
-		label.cuestionario3,
-		label.form_cuestionario4 {
-
-			color: black;
-
-
-		}
+	header h1 {
+		padding-top: 10px;
+		text-align: left;
+		
+	}
 
 
 
-		section.cuestionario1,
-		section.cuestionario2,
-		section.cuestionario3,
-		section.cuestionario4 {
-			padding: 15px;
-			border: 1px solid grey;
-			width: 700px;
-			border-radius: 12px;
-			color: black;
-			margin-left: 20px;
-			margin-right: 20px;
+	.form_cuestionario1  {
+		margin-top: 10px;
+		padding: 10px;
+
+
+	}
+	#form_cuestionario {
+		min-width: 400px;
+		margin-left: 10px;
+		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: black;
+
+	}
+
+	label.cuestionario1, .submit{
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+		font-size: 20px
+	}
+
+	label.cuestionario1{
+
+		color: black;
+
+
+	}
 
 
 
-		}
+	section.cuestionario1, section.cuestionario2 {
+		padding: 15px;
+		border: 1px solid grey;
+		max-width: 700px;
+		min-width: 400px;
+		border-radius: 12px;
+		color: black;
+		margin-left: 20px;
+    	margin-right: 20px;
+		
 
 
-		.title_primer_cuestionario {
-			margin-top: 20px;
-			margin-bottom: 20px;
-
-		}
+	}
 
 
-		.submit {
+	.title_primer_cuestionario {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+	}
 
-			
-			width: 100%;
-			margin-top: 20px;
-			font-size: 20px;
+	.submit {
+		margin-top: 40px;
+		margin-bottom: 30px;
+		border-radius: 10px;
+		width: 200px;
+		height: 45px;
+		cursor: pointer;
+		border: none;
 
-			
-			margin-top: 40px;
-			margin-bottom: 30px;
-			border-radius: 10px;
-			width: 200px;
-			height: 45px;
-			cursor: pointer;
-			border: none;
+		background-image: url("./images/regisr-01.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 190px 40px;
+		
+	}
+	.submit:active {
+		opacity: 0.5;
+		
+	}
 
-			background-image: url("./images/regisr-01.png");
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: 190px 40px;
+	input {
+		padding-left: 10px;
+		width: 300px;
+		font-size: 18px;
+		outline: none;
+		margin-left: 15px;
 
-		}
-
-		.submit:active {
-			opacity: 0.5;
-
-		}
-
-		input {
-			padding-left: 10px;
-			width: 300px;
-			font-size: 18px;
-			outline: none;
-			margin-left: 15px;
-
-		}
-
-		select {
-			outline: none;
-			font-size: 18px;
-			margin-left: 15px;
-			width: 500px;
-		}
+	}
+	select {
+		outline: none;
+		font-size: 18px;
+		margin-left: 15px;
+		width: 500px;
+	}
 
 
 
-		input[type="radio"],
-		input[type="checkbox"] {
-			width: 25px;
-			margin-top: 10px;
-			margin-right: 15px;
-		}
+	input[type="radio"]{
+		width: 25px;
+		margin-top: 10px;
+		margin-right: 15px;
+	}
+	.group_radio {
+		padding-left: 30px;
+	}
+	ul {
+		list-style: none;
+		margin-left: 30px;
+	}
 
-		.group_radio,
-		.group_checkbox {
-			padding-left: 30px;
-		}
-
-		.group_checkbox label {
-			display: inline-block;
-		}
-
-
-		ul {
-			list-style: none;
-
-		}
-
-		h4 {
-			font-size: 20px;
-			color: gray;
-			cursor: pointer;
-			margin: 5px;
-		}
-
-		#geopunto {
-			border: 1px solid gray;
-			padding: 5px;
-			border-radius: 13px;
-		}
-
-		ul {
-			list-style: none;
-		}
-
-		.aclaracion {
-			font-size: 14px;
-		}
-
-		h3 {
-			margin-top: 20px;
-		}
-		li.integrantes_de_la_familia {
-			margin-top: 30px;
-			
-			
-		}
-		button.btn_agregar_integrante {
-			height: 30px;
-			border-radius: 15px;
-			border: 1px dotted grey;
-			padding: 5px;
-			cursor: pointer;	
-			
-				
-		}
-
-		button.btn_comprobar_formulario {
+	button.btn_comprobar_formulario {
 			position: fixed;
 			bottom: 50px;
 			right: 50px;
@@ -263,105 +188,31 @@
 			background-position: center;
 			background-size: 50px ;
 		}
-		button.btn_eliminar_integrante {
-			color: #c22628;
-			height: 30px;
-			background-color: #fff;
-			border-radius: 15px;
-			border: 0.5px solid #808080;
-			padding: 5px;
-			cursor: pointer;
-			margin-top: 50px;
-			margin-left: 500px;
-			font-size: 18px;
-		}
-		.obligatoria::after {
-			content: " *";
-			display: inline-block;
-			width: 10px;
-			color: red;
-			height: 10px;
+
+
+	/* MEDIA QUERY PARA PANTALLAS CON MENOS DE 900PX DE ANCHO */
+
+	@media only screen and (max-width: 900px){
+		footer, header {
+			background-size: 540px;
+			height: 100px;
 		}
 
-		/* Estilos para los inputs de tipo radio */
-		input[type="radio"] {
-		/* Ocultar el radio nativo */
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		/* Definir el tamaño del radio personalizado */
-		width: 15px;
-		height: 15px;
-		/* Establecer el borde del radio personalizado */
-		border: 2px solid #000;
-		/* Estilos adicionales para hacer el radio redondo */
-		border-radius: 50%;
-		display: inline-block;
-		position: relative;
-		/* Espacio para el contenido */
-		margin-right: 5px;
+		main {
+			width: 550px;
 		}
 
-		/* Estilos para cuando el radio está seleccionado */
-		input[type="radio"]:checked::after {
-		content: '';
-		/* Mostrar un punto dentro del radio */
-		width: 10px;
-		height: 10px;
-		background-color: #000;
-		border-radius: 50%;
-		/* Centrar el punto dentro del radio */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		body {
+			width: 600px;
+			
 		}
+	
 
-		
-
-
-		/* MEDIA QUERY PARA PANTALLAS CON MENOS DE 900PX DE ANCHO */
-
-		@media only screen and (max-width: 900px) {
-
-			footer,
-			header {
-				background-size: 560px;
-				height: 100px;
-			}
-
-			main {
-				width: 600px;
-			}
-
-			body {
-				width: 600px;
-
-			}
-
-			select {
-				width: 500px;
-			}
-
-			section.cuestionario1,
-			section.cuestionario2,
-			section.cuestionario3,
-			section.cuestionario4 {
-
-				width: 550px;
+	}
+	
 
 
-
-			}
-
-			button.btn_eliminar_integrante {
-				margin-left: 350px;
-			}
-
-
-
-		}
-	</style>
+</style>
 
 </head>
 
@@ -370,3135 +221,394 @@
 <body>
 	<main>
 
-		<section class="header">
+	<section class="header">
 
-			<header class="header">
-				<!-- <h1>CARACTERIZACIÓN</h1> -->
+		<header class="header">
+			<!-- <h1>ASTRASALUD</h1> -->
+			
+		</header>
 
-			</header>
-
-
-		</section>
-
+		
+	</section>	
+	
 		<!-- seccion de las primeras preguntas -->
 
 
 		<form class="form_cuestionario" id="form_cuestionario" action="#" method="POST">
 
-			<h1>CARACTERIZACIÓN</h1>
+			<h2>CUESTIONARIO ODONTOLOGICO</h2>
 
 
-			<div class="">
-
+		<div class="">
 				<span class="date" id="date"></span></br>
-				<span class="hora" id="hora"></span>
+				<span class="hora" id="hora"></span>					
+		</div>
 
-			</div>
+		<!-- <h2 id="title_primer_cuestionario" class="cuestionario1 title_primer_cuestionario">CUESTIONARIO ODONTOLOGICO</h2> -->
 
+
+		<section id="cuestionario1" class="section cuestionario1">
+
+
+				
 			
+			<label class="label cuestionario1" for="id">ID</label>
+			<input  type="text" id="id" name="id" value="" placeholder="102344553" required >
 
+			<label class="label cuestionario1" for="nombres_apellidos_profesional">Nombres y Apellidos Profesional</label>
+			<input type="text" id="nombres_apellidos_profesional" name="nombres_apellidos_profesional" value="" placeholder="Jose Hernandez Menco" required >
 
 
-			<h3>1. Información General</h3>
+			<label class = "label cuestionario1" for="municipio">Municipio</label>
+			<select class="cuestionario1" name="municipio" id="municipio" required>
 
+				<option value="none" selected disabled>Seleccione Una</option>
 
-			<section id="cuestionario1" class="section cuestionario1">
-
-				<h4>1.1 Datos generales del escenario del entorno que se caracteriza</h4>
-
-
-				<label class="label cuestionario1 obligatoria" for="departamento" >Departamento</label>
-				<input type="text" id="departamento" name="departamento" value="Norte de Santander" required>
-
-				<!-- <label for="uzpe" class="cuestionario1 obligatoria" class="">UZPE (Unidad Zonal de Planeación y Evaluación)</label>
-				<input type="text" id="uzpe" name="uzpe" value="" placeholder="UPZE100" required> -->
-
-
-
-
-
-
-
-				<label class="label cuestionario1" for="unidad_zona_planeacion">Unidad Zonal de Planeación y Evaluación
-					- Regional - Provincia</label>
-				<input type="text" id="unidad_zona_planeacion" name="unidad_zona_planeacion" value="Pamplona">
-
-				<label class="label cuestionario1 obligatoria" for="municipio">Municipio / Área no municipalizada</label>
-				<select class="cuestionario1" name="municipio" id="municipio" required>
-
-					<option value="none" selected disabled>Seleccione Una</option>
-
-
-					<option value="54174-CHITAGA">54174-CHITAGÁ</option>
-					<option value="54223-CUCUTILLA">54223-CUCUTILLA</option>
-					<option value="54480-MUTISCUA">54480-MUTISCUA</option>
-					<option value="54518-PAMPLONA">54518-PAMPLONA</option>
-					<option value="54743-SILOS">54743-SILOS</option>
-					<option value="54520-PAMPLONITA">54520-PAMPLONITA</option>
-
-
-				</select>
-
-
-				<label class="label cuestionario1 obligatoria" for="territorio">Territorio</label>
-				<select class="cuestionario1" id="territorio" name="territorio" required>
-
-					<option value="none" selected disabled>Seleccione Una</option>
-
-
-					<option value="T01">T01-SILOS</option>
-					<option value="T02">T02-MUTISCUA</option>
-					<option value="T03">T03-PAMPLONA</option>
-					<option value="T04">T04-CHITAGÁ</option>
-					<option value="T05">T05-CUCUTILLA</option>
-					<option value="T06">T06-PAMPLONITA</option>
-
-
-
-
-				</select>
-
-				<label class="label cuestionario1 obligatoria" name="microterritorio" for="microterritorio">Microterritorio</label>
-				<select class="cuestionario1" id="microterritorio" required>
-
-					<option value="none" selected disabled>Seleccione Una</option>
-
-
-					<option value="MT01">MT01</option>
-					<option value="MT02">MT02</option>
-					<option value="MT03">MT03</option>
-					<option value="MT04">MT04</option>
-					<option value="MT05">MT05</option>
-					<option value="MT06">MT06</option>
-					<option value="MT07">MT07</option>
-					<option value="MT08">MT08</option>
-					<option value="MT09">MT09</option>
-					<option value="MT10">MT10</option>
-					<option value="MT11">MT11</option>
-					<option value="MT12">MT12</option>
-
-
-
-
-
-				</select>
-
-
-				<label class="label cuestionario1" for="corregimiento">Corregimiento / Centro de poblado / Vereda /
-					Localidad/ Barrio/ Resguardo indígena</label>
-				<input id="corregimiento" type="text" name="corregimiento" value="" placeholder="La laguna">
-
-
-
-
-				<label class="label cuestionario1" for="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion"="true" value="" placeholder="Avenida 9 1 3">
-
-
-
-				<!-- PENDIENTE DE REVISION -->
-
-
-
-				<label class="label cuestionario1" for="geopunto">Geopunto</label>
-
-				<div id="geopunto">
-
-					<label class="label cuestionario1" for="latitud">Latitud</label>
-					<input type="text" name="latitud" id="latitud" step="any" value="" placeholder="7.898291">
-					<label class="label cuestionario1" for="longitud">Longitud</label>
-					<input type="text" name="longitud" id="longitud" step="any" value="" placeholder="-72.507160">
-
-
-					<button id="btn_obtener_coordenadas">Obtener Coordernadas</button>
-
-
-				</div>
-
-
-
-
-
-				<label for="Ubicación_del_hogar" class="cuestionario1">Ubicación del hogar (cuando no se cuenta con
-					nomenclatura, punto de referencia)</label>
-				<input type="text" id="Ubicación_del_hogar" name="Ubicación_del_hogar" value=""
-					placeholder="Junto al parque">
-
-
-
-				<!-- <label for="numero_identificaion_hogar" class="cuestionario1">Número de Identificación deL hogar</label>
-				<input type="text" id="numero_identificaion_hogar" name="numero_identificaion_hogar" value=""
-					placeholder="H"> -->
-
-
-
-				<label for="numero_identificaion_familia" class="cuestionario1">Número de Identificación de la
-					familia</label>
-				<input type="text" id="numero_identificaion_familia" name="num_identificaion_familia" value=""
-					placeholder="F0001">
-
-
-				<label for="estrato" class="cuestionario1 obligatoria">Estrato socioeconómico de la vivienda</label>
-				<select id="estrato" type="number" name="estrato" required>
-					<option value="none" selected disabled>Seleccione Una</option>
-					<option value="Bajo bajo">1. Bajo-bajo</option>
-					<option value="Bajo">2. Bajo</option>
-					<option value="Medio Bajo">3. Medio-Bajo</option>
-					<option value="Medio">4. Medio</option>
-					<option value="Medio alto">5. Medio-Alto</option>
-					<option value="Alto">6. Alto</option>
-
-				</select>
-
-
-
-
-				<label for="numero_hogares" class="cuestionario1 obligatoria">Número de hogares en la vivienda</label>
-				<input type="number" id="numero_hogares" name="numero_hogares" value="" placeholder="1" required>
-
-				<label id="numero_familias" class="cuestionario1 obligatoria">Número de familias en la vivienda</label>
-				<input type="number" id="numero_familias" name="numero_familias" value="" placeholder="2" required>
-
-				<label for="numero_personas" class="cuestionario1 obligatoria">Número de personas en la vivienda</label>
-				<input type="number" id="numero_personas" name="numero_personas" value="" placeholder="7" required>
-
-
-			</section>
-
-
-			<!-- FIN DE LA PRIMERA LISTA DE PREGUNTAS -->
-
-
-
-
-
-			<!-- INICIO DE LA SEGUNDA SECCION DE PREGUNTAS -->
-
-			<h3>2. Detalle de equipos básicos de salud (EBS)</h3>
-
-			<section class="section cuestionario2">
-
-				<label for="numero_indentificaion_salud" class="cuestionario1 obligatoria">Número de identificación del Equipo
-					Básico de Salud (EBS)</label>
-				<input type="text" id="numero_indentificaion_salud" name="numero_indentificaion_salud" value=""
-					placeholder="EBS001" required>
+				<option value="54174-CHITAGA">54174-CHITAGÁ</option>
+				<option value="54223-CUCUTILLA">54223-CUCUTILLA</option>
+				<option value="54480-MUTISCUA">54480-MUTISCUA</option>
+				<option value="54518-PAMPLONA">54518-PAMPLONA</option>
+				<option value="54743-SILOS">54743-SILOS</option>
+				<option value="54520-PAMPLONITA">54520-PAMPLONITA</option>
 
 				
-				<label for="prestador_primario" class="cuestionario1 obligatoria">Prestador primario / Organismo de adscripción del
-					EBS</label>
-				<select type="text" name="prestador_primario" id="prestador_primario" required>
-					<option value="none" selected disabled>Seleccione Una</option>
-					<option value="5451800372-ESE HOSPITAL SAN JUAN DE DIOS DE PAMPLONA">5451800372-ESE HOSPITAL SAN
-						JUAN DE DIOS DE PAMPLONA</option>
-					<option value="5451800372-CENTRO DE SALUD DE CHITAGA">5451800372-CENTRO DE SALUD DE CHITAGA</option>
-					<option value="5451800372-CENTRO DE SALUD DIVINO NIÑO DE CUCUTILLA">5451800372-CENTRO DE SALUD
-						DIVINO NIÑO DE CUCUTILLA</option>
-					<option value="5451800372-CENTRO DE SALUD DE MUTISCUA">5451800372-CENTRO DE SALUD DE MUTISCUA
-					</option>
-					<option value="5451800372-CENTRO DE SALUD DE PAMPLONITA">5451800372-CENTRO DE SALUD DE PAMPLONITA
-					</option>
-					<option value="5451800372-CENTRO DE SALUD DE SILOS">5451800372-CENTRO DE SALUD DE SILOS</option>
-
-
-				</select>
-
-
-				<label for="reponsable_que_realiza_caracterizacion" class="cuestionario1 obligatoria">Responsable: <span class="aclaracion"> de la evaluación en salud - caracterización</span></label>
-				<input type="text" id="reponsable_que_realiza_caracterizacion" name="reponsable_que_realiza_caracterizacion" value=""
-				placeholder="Pedro Perez" required>
-
-
-				<label for="codigo_ficha" class="cuestionario1 obligatoria">Código de la ficha</label>
-				<input type="text" id="codigo_ficha" name="codigo_ficha" value="" placeholder="CF001" required>
+			</select>
 
 
 
 
-				<h4>2.1 Detalle de personal de los EBS</h4>
+			<label class = "label cuestionario1" for="territorio">Territorio</label>
+			<select class="cuestionario1" id="territorio" name="territorio" required>
 
-				<label for="tipo_documento_diligenciador" class="cuestionario1 obligatoria">Tipo de documento de quien diligencia
-				</label>
-				<select type="text" name="tipo_documento_diligenciador" id="tipo_documento_diligenciador" required>
-
-					<option value="none" selected disabled>Seleccione Una</option>
-
-					<option value="AS-Adulto sin identificación">AS-Adulto sin identificación</option>
-					<option value="CC-Cedula de ciudadania">CC-Cedula de ciudadania</option>
-					<option value="CD-Carnet diplomatico">CD-Carnet diplomatico</option>
-					<option value="CE-Cedula de extranjeria">CE-Cedula de extranjeria</option>
-					<option value="MS-Menor sin identificación">MS-Menor sin identificación</option>
-					<option value="CN-Certificado de nacido vivo">CN-Certificado de nacido vivo</option>
-					<option value="PE-Permiso especial de permanecia">PE-Permiso especial de permanecia</option>
-					<option value="PT-Permiso por protección temporal">PT-Permiso por protección temporal</option>
-					<option value="RC-Registro Civil">RC-Registro Civil</option>
-					<option value="TI-Tarjeta de identidad">TI-Tarjeta de identidad</option>
-
-
-
-				</select>
-
-				<label for="numero_responsable_quien_diligencia" class="cuestionario1 obligatoria">Numero de identificación del
-					responsable quien diligencia</label>
-				<input type="text" id="numero_responsable_quien_diligencia" name="numero_responsable_quien_diligencia"
-					value="" placeholder="1092489718" required>
-
-
-
-
-				<label for="perfil_persona_evalua" class="cuestionario1 obligatoria">Perfil de quien realiza la evaluación de
-					necesidades en salud - caracterización</label>
-				<select type="text" name="perfil_persona_evalua" id="perfil_persona_evalua" required>
-					<option value="none" selected disabled>Seleccione Una</option>
-
-					<option value="auxiliar de enfermeria">AUXILIAR DE ENFERMERIA</option>
-					<option value="PROFESIONAL EN ENFERMERIA">PROFESIONAL EN ENFERMERIA</option>
-					<option value="MEDICO">MEDICO</option>
-					<option value="ODONTOLOGO">ODONTOLOGO</option>
-					<option value="PSICOLOGO">PSICOLOGO</option>
-					<option value="NUTRICIONISTA">NUTRICIONISTA</option>
-
-
-				</select>
+				<option value="none" selected disabled>Seleccione Una</option>
 
 				
+				<option value="T01">T01-SILOS</option>
+				<option value="T02">T02-MUTISCUA</option>
+				<option value="T03">T03-PAMPLONA</option>
+				<option value="T04">T04-CHITAGÁ</option>
+				<option value="T05">T05-CUCUTILLA</option>
+				<option value="T06">T06-PAMPLONITA</option>
+
+			</select>
 
 
-				<label for="fecha_de_registro" class="cuestionario1">Fecha de registro</label>
-				<input type="date" name="fecha_de_registro" id="fecha_de_registro" value="" placeholder="">
+
+			<label class = "label cuestionario1" for="microterritorio">Microterritorio</label>
+			<select class="cuestionario1" name="microterritorio" required id="microterritorio">
+
+				<option value="none" selected disabled>Seleccione Una</option>
+				
+				<option value="MT01">MT01</option>
+				<option value="MT02">MT02</option>
+				<option value="MT03">MT03</option>
+				<option value="MT04">MT04</option>
+				<option value="MT05">MT05</option>
+				<option value="MT06">MT06</option>
+				<option value="MT07">MT07</option>
+				<option value="MT08">MT08</option>
+				<option value="MT09">MT09</option>
+				<option value="MT10">MT10</option>
+				<option value="MT11">MT11</option>
+				<option value="MT12">MT12</option>
+
+			</select>
 
 
 
-			</section>
 
-			<!-- FINAL DE LA SEGUNDA SECCION DE PREGUNTAS  -->
+			<label class = "label cuestionario1" for="ebas">EBAS</label>
+			<input type="text" name="ebas" id="ebas" required value="" placeholder="EBAS001">
+
+			<!-- agregar los 14 campos mas -->
+
+			<label class = "label cuestionario1" for="nombres_apellidos">1. Nombre y Apellidos</label>
+			<input type="text" name="nombres_apellidos" id="nombres_apellidos" required value="" placeholder="Jose Manuel Salcedo Mejia">
+
+			<label for="tipo_documento_persona" class="cuestionario1">Tipo de documento</label>
+			<select type="text" name="tipo_documento" id="tipo_documento_persona" required>
+
+				<option value="none" selected disabled>Seleccione Una</option>
+
+				<option value="AS-Adulto sin identificación">AS-Adulto sin identificación</option>
+				<option value="CC-Cedula de ciudadania">CC-Cedula de ciudadania</option>
+				<option value="CD-Carnet diplomatico">CD-Carnet diplomatico</option>
+				<option value="CE-Cedula de extranjeria">CE-Cedula de extranjeria</option>
+				<option value="MS-Menor sin identificación">MS-Menor sin identificación</option>
+				<option value="CN-Certificado de nacido vivo">CN-Certificado de nacido vivo</option>
+				<option value="PE-Permiso especial de permanecia">PE-Permiso especial de permanecia</option>
+				<option value="PT-Permiso por protección temporal">PT-Permiso por protección temporal
+				</option>
+				<option value="RC-Registro Civil">RC-Registro Civil</option>
+				<option value="TI-Tarjeta de identidad">TI-Tarjeta de identidad</option>
+
+			</select>
+
+			<label class = "label cuestionario1" for="documento">3. Numero documento</label>
+			<input type="number" name="documento" id="documento" required value="" placeholder="1072489519">
+
+			<label class = "label cuestionario1" for="para_usted_que_es_tener_boca_sana">4. ¿En su opinión que es tener una boca sana?</label>
+			<input type="text" name="para_usted_que_es_tener_boca_sana" id="para_usted_que_es_tener_boca_sana" required value="" placeholder="Lavarse los dientes">
+
+			<label class = "label cuestionario1" for="que_usa_para_limpiar_sus_dientes">5. ¿Qué utiliza para limpiar sus dientes?</label>
+			<input type="text" name="que_usa_para_limpiar_sus_dientes" id="que_usa_para_limpiar_sus_dientes" required value="" placeholder="cepillo de dientes y colgate">
+
+			<label class = "label cuestionario1" for="si_cepilla_sus_diente_usando_cepillo_cuando_lo_hace">6. Si en la pregunta anterior (5), alguien respondió que usa cepillo, ¿Cuándo se cepilla los dientes?</label>
+			<input type="text" name="si_cepilla_sus_diente_usando_cepillo_cuando_lo_hace" id="si_cepilla_sus_diente_usando_cepillo_cuando_lo_hace" required value="" placeholder="por las mañanas y las noches">
+
+			<label class = "label cuestionario1" for="supervisa_a_los_ninos_menores_10_anios">7. A los niños menores de 10 años les es supervisado el cepillado en algún momento del día</label>
+			<div class="group_radio">
+						<label class="label radio" for="supervisa_a_los_ninos_menores_10_anios_si" >SI</label>
+						<input type="radio" id="supervisa_a_los_ninos_menores_10_anios_si"  class="radio" name="supervisa_a_los_ninos_menores_10_anios" required value="si">
+						<label class="label radio" for="supervisa_a_los_ninos_menores_10_anios_no">NO</label>
+						<input type="radio" id="supervisa_a_los_ninos_menores_10_anios_no" class = "radio" name="supervisa_a_los_ninos_menores_10_anios" required value="no">
+					</div>
+
+			<label class = "label cuestionario1" for="cuando_cambia_cepillo">8. ¿Cuándo cambia el cepillo de dientes?</label>
+			<input type="text" name="cuando_cambia_el_cepillo_de_dientes" id="cuando_cambia_cepillo" required value="" placeholder="cada 3 meses">
+
+			<label class = "label cuestionario1" for="respuesta_no_utiliza_dental">9. Si en la pregunta (5) alguien no refirió el uso de la seda dental, ¿por qué no utiliza?</label>
+			<input type="text" name="porque_no_usa_seda_dental" id="respuesta_no_utiliza_dental" required value="" placeholder="porque ...">
 
 
-			<!-- INICIO DE LA SEGUNDA SECCION DE PREGUNTAS -->
 
-			<h3>3. Caracterizacion de la vivienda</h3>
+
+			<label class = "label cuestionario1" for="mf_ha_recibido_informacion_salud_oral">10. ¿Algún miembro de la familia ha recibido información en salud oral?</label>
+			
+					<div class="group_radio">
+						<label class="label radio" for="mf_ha_recibido_informacion_salud_oral_si">SI</label>
+						<input type="radio" id="mf_ha_recibido_informacion_salud_oral_si" class="radio" name="mf_ha_recibido_informacion_salud_oral" required value="si">
+						<label class="label radio" for="mf_ha_recibido_informacion_salud_oral_no">NO</label>
+						<input type="radio" id="mf_ha_recibido_informacion_salud_oral_no" class = "radio" name="mf_ha_recibido_informacion_salud_oral" required value="no">
+					</div>
+
+
+			<label class = "label cuestionario1" for="lugar_realiza_practicas_higiene_oral">11.  ¿En qué lugar del hogar realiza las prácticas de higiene oral?</label>
+			<input type="text" name="en_que_lugar_realiza_las_practicas_de_higiene_oral" id="lugar_realiza_practicas_higiene_oral" required value="" placeholder="en el lavamanos">
+
+			<label class = "label cuestionario1" for="">El lugar donde se cepilla los dientes tiene?</label>
 
 			<ul>
-				<li>
-
-					<section class="seccion cuestionario3">
-						<h4>3.1 Caracteristicas y condiciones del entorno y la vivienda</h4>
-
-						<label for="tipo_vivienda" class="cuestionario3">Tipo de vivienda</label>
-						<select type="text" id="tipo_vivienda" name="tipo_vivienda" value="" placeholder="">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Casa">1. Casa</option>
-							<option value="Casa Indigena">2. Casa Indigena</option>
-							<option value="Carpa">3. Carpa</option>
-							<option value="Apartamento">4. Apartamento</option>
-							<option value="Habitación">5. Habitación</option>
-							<option value="Contendor">6. Contendor</option>
-							<option value="Embarcación">7. Embarcación</option>
-							<option value="Vagón">8. Vagón</option>
-							<option value="Refugio Natural">9. Refugio Natural</option>
-							<option value="Cueva">10. Cueva</option>
-							<option value="Puente">11. Puente</option>
-							<option value="Otro">12. Otro</option>
-
-
-						</select>
-
-
-
-						<label for="tipo_material_vivienda" class="cuestionario3">Seleccione el tipo de material
-							predominante en las paredes</label>
-						<select type="text" id="tipo_material_vivienda" name="tipo_material_vivienda" value=""
-							placeholder="">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Bloque, ladrillo, piedra, madera pulida">1. Bloque, ladrillo, piedra,
-								madera pulida</option>
-							<option value="Tapia pisada, adobe">2. Tapia pisada, adobe</option>
-							<option value="Bahareque">3. Bahareque</option>
-							<option value="Material prefabricado">4. Material prefabricado</option>
-							<option value="Madera burda, tabla, tablón">5. Madera burda, tabla, tablón</option>
-							<option value="Guadua, casa, esterilla, otro, vegetal">6. Guadua, casa, esterilla, otro,
-								vegetal</option>
-							<option value="Zinc, tela, lona, cartón, latas, desechos, plástico">7. Zinc, tela, lona,
-								cartón, latas, desechos, plástico</option>
-							<option value="Otro">8. Otro</option>
-							<option value="Sin paredes">0. Sin paredes</option>
-
-
-						</select>
-
-						<label for="material_predominante_vivienda" class="cuestionario3">¿Cuál es el material
-							predominante del piso de la vivienda?</label>
-
-						<select type="text" id="material_predominante_vivienda" name="material_predominante_vivienda"
-							value="" placeholder="">
-
-							<option value="none">Seleccione Una</option>
-
-							<option value="Alfombra o tapete, mármol, parque, madera pulida y lacada">1. Alfombra o
-								tapete, mármol, parque, madera pulida y lacada</option>
-							<option value="Baldosa, vinilo, tableta, ladrillo">2. Baldosa, vinilo, tableta, ladrillo
-							</option>
-							<option value="Cemento, gravilla">3. Cemento, gravilla</option>
-							<option value="Madera burda, madera en mal estado, tabla, tablón">4. Madera burda, madera
-								en mal estado, tabla, tablón</option>
-							<option value="Tierra o arena">5. Tierra o arena</option>
-							<option value="Otro">6. Otro</option>
-
-
-
-
-						</select>
-
-						<label for="material_predominante_techo" class="cuestionario3">¿Cuál es el material predominante
-							del techo?(Señale una sola opción)</label>
-						<select type="text" id="material_predominante_techo" name="material_predominante_techo" value=""
-							placeholder="">
-
-							<option value="none">Seleccione Una</option>
-
-							<option value="Concreto">1. Concreto</option>
-							<option value="Tejas de barro">2. Tejas de barro</option>
-							<option value="Fibrocemento">3. Fibrocemento</option>
-							<option value="Zinc">4. Zinc</option>
-							<option value="Palma o paja">5. Palma o paja</option>
-							<option value="Plástico">6. Plástico</option>
-							<option value="Desechos (cartón, lata, tela, sacos, etc)">7. Desechos (cartón, lata,
-								tela, sacos, etc)</option>
-							<option value="Otro">8. Otro</option>
-
-
-
-						</select>
-
-						<label for="cuantos_cuartos_dispone_la_vivienda" class="cuestionario3">¿De cuántos cuartos o
-							piezas dispone esta vivienda?</label>
-						<input type="number" id="cuantos_cuartos_dispone_la_vivienda"
-							name="cuantos_cuartos_dispone_la_vivienda" value="" placeholder="">
-
-
-
-
-
-						<label for="" class="cuestionario3">Hacinamiento:<span class="aclaracion">Cuando el resultado de
-								dividir el número total de personas en la vivienda entre el número de habitaciones es
-								mayor a 3 (DANE)</span></label>
-
-
-						<div class="group_radio">
-							<label class="label radio" for="hacinamiento_si">SI</label>
-							<input type="radio" id="hacinamiento_si" class="radio" name="hacinamiento" value="si">
-							<label class="label radio" for="hacinamiento_no">NO</label>
-							<input type="radio" id="hacinamiento_no" class="radio" name="hacinamiento" value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario3">Se identifican algunos de los siguientes escenarios de
-							riesgo de accidente en la vivienda</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="objetos_cortantes" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Objetos cortantes o punzantes al alcance de los niños">
-							<label class="label checkbox" for="objetos_cortantes">1. Objetos cortantes o punzantes al
-								alcance de los niños</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sustancias_quimicas_al_alcance_de_los_menores" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Sustancias químicas al alcance de los niños">
-							<label class="label checkbox" for="sustancias_quimicas_al_alcance_de_los_menores">2.
-								Sustancias químicas al alcance de los niños</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="medicamentos_al_alcance_de_los_menores" class="checkbox"
-								name="escenarios_de_riego_de_accidente" value="Medicamentos al alcance de los niños">
-							<label class="label checkbox" for="medicamentos_al_alcance_de_los_menores">3. Medicamentos
-								al alcance de los niños</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="velas_velones_encendidos" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Velas, velones, iciensos encendidos en la vivienda">
-							<label class="label checkbox" for="velas_velones_encendidos">4. Velas, velones, iciensos
-								encendidos en la vivienda</label>
-
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="conexiones_electricas" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Conexiones electricas en masl estado o sobrecargas">
-							<label class="label checkbox" for="conexiones_electricas">5. Conexiones electricas en masl
-								estado o sobrecargas</label>
-
-						</div>
-
-
-						<div class="group_checkbox">
-
-							<label class="label checkbox" for="botones_canicas_u_otros_objetos">
-								<input type="checkbox" id="botones_canicas_u_otros_objetos" class="checkbox"
-									name="escenarios_de_riego_de_accidente"
-									value="Botones, canicas entre otros objetos pequeños o con piezas que puedan desmontarse, al alcance de los niños">6.
-								Botones, canicas entre otros objetos pequeños o con piezas que puedan desmontarse, al
-								alcance de los niños</label>
-
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="pasillos_obstruidos" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Pasillos obstruidos con juguetes, sillas u otros objetos">
-							<label class="label checkbox" for="pasillos_obstruidos">7. Pasillos obstruidos con juguetes,
-								sillas u otros objetos</label>
-
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="superficies_resbaladizas" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Superficies resbaladizas, suelos con agua, grasa, aceites, entre otros">
-							<label class="label checkbox" for="superficies_resbaladizas">8. Superficies resbaladizas,
-								suelos con agua, grasa, aceites, entre otros</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="tanques_sin_tapa" class="checkbox"
-								name="escenarios_de_riego_de_accidente"
-								value="Tanques o recipientes de almacenamiento de agua sin tapa">
-							<label class="label checkbox" for="tanques_sin_tapa">9. Tanques o recipientes de
-								almacenamiento de agua sin tapa</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="escaleras_sin_proteccion" class="checkbox"
-								name="escenarios_de_riego_de_accidente" value="Escaleras sin protección">
-							<label class="label checkbox" for="escaleras_sin_proteccion">10. Escaleras sin
-								protección</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="escenario_accidente_ninguno" class="checkbox"
-								name="escenarios_de_riego_de_accidente" value="Ninguno">
-							<label class="label checkbox" for="escenario_accidente_ninguno">Ninguno</label>
-
-
-						</div>
-
-
-
-
-
-						<label for="" class="cuestionario3">Desde la vivienda se puede acceder facilmente a</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="medios_de_transporte" class="checkbox"
-								name="desde_la_vivienda_se_tiene_acceso_a"
-								value="Medios de transporte (Buses, autos, camiones, lanchas, etc)">
-							<label class="label checkbox" for="medios_de_transporte">1. Medios de transporte (Buses,
-								autos, camiones, lanchas, etc)</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="parques_centros_areas_deportivas" class="checkbox"
-								name="desde_la_vivienda_se_tiene_acceso_a"
-								value="Parques, areas deportivas, centros sociales y/o recreacionales">
-							<label class="label checkbox" for="parques_centros_areas_deportivas">2. Parques, areas
-								deportivas, centros sociales y/o recreacionales</label>
-
-
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="instituciones_educativas" class="checkbox"
-								name="desde_la_vivienda_se_tiene_acceso_a" value="Instituciones educativas">
-							<label class="label checkbox" for="instituciones_educativas">3. Instituciones
-								educativas</label>
-
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="servicios_de_salud" class="checkbox"
-								name="desde_la_vivienda_se_tiene_acceso_a" value="Servicios de salud">
-							<label class="label checkbox" for="servicios_de_salud">4. Servicios de salud</label>
-
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="desde_la_vivienda_se_tiene_acceso_a_ninguno" class="checkbox"
-								name="desde_la_vivienda_se_tiene_acceso_a" value="Ninguno">
-							<label class="label checkbox"
-								for="desde_la_vivienda_se_tiene_acceso_a_ninguno">Ninguno</label>
-
-
-						</div>
-
-
-
-
-
-
-
-						<label for="" class="cuestionario3">¿Cuál funente de energía o combustible se usa para
-							concinar?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="electricidad" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Electricidad">
-							<label class="label checkbox" for="electricidad">1. Electricidad</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="gas_natural" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Gas natural">
-							<label class="label checkbox" for="gas_natural">2. Gas natural</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="gas_propano" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Gas Licuado del petróleo(gas propano)">
-							<label class="label checkbox" for="gas_propano">3. Gas Licuado del petróleo(gas
-								propano)</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="madera_carbon" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Leña, madera o carbón de leña">
-							<label class="label checkbox" for="madera_carbon">4. Leña, madera o carbón de leña</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="petroleo_gasolina_etc" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Petróleo, gasolina, kerosén, alcohol">
-							<label class="label checkbox" for="petroleo_gasolina_etc">5. Petróleo, gasolina, kerosén,
-								alcohol</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="carbon_mineral" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Carbón mineral">
-							<label class="label checkbox" for="carbon_mineral">6. Carbón mineral</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="materiales_de_desecho" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Materiales de desecho">
-							<label class="label checkbox" for="materiales_de_desecho">7. Materiales de desecho</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="fuente_de_energia_o_combustible_otro" class="checkbox"
-								name="fuente_de_energia_o_combustible" value="Otro">
-							<label class="label checkbox" for="fuente_de_energia_o_combustible_otro">8. Otro</label>
-
-						</div>
-
-
-
-						<label for="" class="cuestionario3">¿Se observa cerca de la vivienda o dentro de ella criaderos
-							o reservorios que puedan favorecer la precencia de vectores transmisores de
-							enfermedades?</label>
-
-
-						<div class="group_radio">
-							<label class="label radio" for="reservorios_si">SI</label>
-							<input type="radio" id="reservorios_si" class="radio"
-								name="reservorios_que_favorecen_vectores_transmisores_de_enfermedades" value="si">
-							<label class="label radio" for="reservorios_no">NO</label>
-							<input type="radio" id="reservorios_no" class="radio"
-								name="reservorios_que_favorecen_vectores_transmisores_de_enfermedades" value="no">
-						</div>
-
-
-					</section>
-				</li>
-
-
-
-				<li>
-
-
-					<section class="seccion cuestionario3">
-
-
-						<h4>3.2 Oficios u ocupaciones que se desarrollan en la vivienda o su entorno inmediato
-							(Peridomicilio)</h4>
-
-						<label for="" class="cuestionario3">Observe si cerca de la vivienda hay alguno de los
-							siguientes</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_cutivos" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Cultivos">
-							<label class="label checkbox" for="hay_cultivos">1. Cultivos</label>
-
-
-						</div>
-
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_apriscos" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Apriscos">
-							<label class="label checkbox" for="hay_apriscos">2. Apriscos</label>
-
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_proquerizas" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Proquerizas">
-							<label class="label checkbox" for="hay_proquerizas">3. Proquerizas</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_galpones" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Galpones">
-							<label class="label checkbox" for="hay_galpones">4. Galpones</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_terrenos_baldios" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Terrenos baldíos">
-							<label class="label checkbox" for="hay_terrenos_baldios">5. Terrenos baldíos</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_presencia_de_plagas" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay"
-								value="Presencia de plagas (roedores, cucarachas, zancudos, moscas, etc)">
-							<label class="label checkbox" for="hay_presencia_de_plagas">6. Presencia de plagas
-								(roedores, cucarachas, zancudos, moscas, etc)</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_ruido" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Ruido o sonidos desagradables">
-							<label class="label checkbox" for="hay_ruido">7. Ruido o sonidos desagradables</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_malos_olores" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Malos olores">
-							<label class="label checkbox" for="hay_malos_olores">8. Malos olores</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_sitios_satelites" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay"
-								value="Sitios satélites de disposición de excretas">
-							<label class="label checkbox" for="hay_sitios_satelites">9. Sitios satélites de disposición
-								de excretas</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_rellenos_sanitarios" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Rellenos sanitarios o botaderos">
-							<label class="label checkbox" for="hay_rellenos_sanitarios">10. Rellenos sanitarios o
-								botaderos</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_industrias_contaminantes" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay"
-								value="Industrias contaminantes (del sector energético, minero, transporte, construcción, manufacturera, entre otros)">
-							<label class="label checkbox" for="hay_industrias_contaminantes">11. Industrias
-								contaminantes <span class="aclaracion">(del sector energético, minero, transporte, etc)</span></label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_contaminacion_visual" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Contaminación visual">
-							<label class="label checkbox" for="hay_contaminacion_visual">12. Contaminación
-								visual</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_rio_o_quebrada" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Rio o quebrada">
-							<label class="label checkbox" for="hay_rio_o_quebrada">13. Rio o quebrada</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_planta_de_tratamiento_de_agua" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay"
-								value="Planta de tratamiento de agua residual">
-							<label class="label checkbox" for="hay_planta_de_tratamiento_de_agua">14. Planta de
-								tratamiento de agua residual</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_extraccion_minera" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Extracción minera">
-							<label class="label checkbox" for="hay_extraccion_minera">15. Extracción minera</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_canales_de_agua_lluvia" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Canales de agua lluvia">
-							<label class="label checkbox" for="hay_canales_de_agua_lluvia">16. Canales de agua
-								lluvia</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_vias_de_trafico_vehicular" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Vías de tráfico vehicular">
-							<label class="label checkbox" for="hay_vias_de_trafico_vehicular">17. Vías de tráfico
-								vehicular</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_quemas_a_cielo_abierto" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Quemas a cielo abierto">
-							<label class="label checkbox" for="hay_quemas_a_cielo_abierto">18. Quemas a cielo
-								abierto</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="hay_otro" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Otro">
-							<label class="label checkbox" for="hay_otro">19. Otro</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="Observe_si_cerca_de_la_vivienda_hay_ninguno" class="checkbox"
-								name="Observe_si_cerca_de_la_vivienda_hay" value="Ninguno">
-							<label class="label checkbox"
-								for="Observe_si_cerca_de_la_vivienda_hay_ninguno">Ninguno</label>
-
-						</div>
-
-
-
-
-
-						<label for="" class="cuestionario3">¿Al interior de la vivienda se realiza alguna actividad
-							económica?</label>
-
-
-						<div class="group_radio">
-							<label class="label radio" for="se_realiza_actividad_si">SI</label>
-							<input type="radio" id="se_realiza_actividad_si" class="radio"
-								name="se_realiza_alguna_actividad_economica_al_interior_de_la_vivienda" value="si">
-							<label class="label radio" for="se_realiza_actividad_no">NO</label>
-							<input type="radio" id="se_realiza_actividad_no" class="radio"
-								name="se_realiza_alguna_actividad_economica_al_interior_de_la_vivienda" value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario3">Señale los animales que conviven con la familia dentro de la
-							vivienda o en su entorno inmediato</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_perros" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Perros">
-							<label class="label checkbox" for="viven_con_perros">1. Perros</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_gatos" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Gatos">
-							<label class="label checkbox" for="viven_con_gatos">2. Gatos</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="_viven_con_porcinos" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Porcinos">
-							<label class="label checkbox" for="_viven_con_porcinos">3. Porcinos</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_bobinos" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Bóvidos: Búfalos, vacas, toros">
-							<label class="label checkbox" for="viven_con_bobinos">4. Bóvidos: Búfalos, vacas,
-								toros</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_equinos" class="checkbox"
-								name="animales_que_conviven_con_la_familia"
-								value="Équidos: Asnos, mulas, caballos, burros">
-							<label class="label checkbox" for="viven_con_equinos">5. Équidos: Asnos, mulas, caballos,
-								burros</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_ovinos" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Ovinos / caprino">
-							<label class="label checkbox" for="viven_con_ovinos">6. Ovinos / caprino</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_aves_de_produccion" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Aves de producción">
-							<label class="label checkbox" for="viven_con_aves_de_produccion">7. Aves de
-								producción</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_aves_ornamentales" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Aves ornamentales">
-							<label class="label checkbox" for="viven_con_aves_ornamentales">8. Aves ornamentales</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_peces_ornamentales" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Peces ornamentales, Hámster">
-							<label class="label checkbox" for="viven_con_peces_ornamentales">9. Peces ornamentales,
-								Hámster</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_cobayos_conejos" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Cobayos, conejos">
-							<label class="label checkbox" for="viven_con_cobayos_conejos">10. Cobayos, conejos</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="viven_con_animales_silvestres" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Animales silvestres">
-							<label class="label checkbox" for="viven_con_animales_silvestres">11. Animales
-								silvestres</label>
-						</div>
-						<div class="group_checkbox">
-							<input type="checkbox" id="animales_que_conviven_con_la_familia_otro" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Otro">
-							<label class="label checkbox" for="animales_que_conviven_con_la_familia_otro">12.
-								Otro</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="animales_que_conviven_con_la_familia_ninguno" class="checkbox"
-								name="animales_que_conviven_con_la_familia" value="Ninguno">
-							<label class="label checkbox"
-								for="animales_que_conviven_con_la_familia_ninguno">Ninguno</label>
-						</div>
-
-
-						<label for="cuantos_animales_viven_con_la_familia" class="cuestionario3">¿Cuántos
-							Animales?</label>
-						<input type="number" id="cuantos_animales_viven_con_la_familia"
-							name="cuantos_animales_viven_con_la_familia" value="" placeholder="3">
-
-
-
-					</section>
+				<li> 
+
+					<label class = "label cuestionario1" for="tiene_agua_potable">12. Tiene agua potable</label>
+					<div class="group_radio">
+						<label class="label radio" for="tiene_agua_potable_si">SI</label>
+						<input type="radio" id="tiene_agua_potable_si" class="radio" name="tiene_agua_potable" required value="si">
+						<label class="label radio" for="tiene_agua_potable_no">NO</label>
+						<input type="radio" id="tiene_agua_potable_no" class = "radio" name="tiene_agua_potable" required value="no">
+					</div>
 
 				</li>
 
-
 				<li>
-					<section class="seccion cuestionario3">
+					<label class = "label cuestionario1" for="tiene_iluminacion">13. Cuenta con iluminación</label>
+					<div class="group_radio">
+						<label class="label radio" for="tiene_iluminacion_si">SI</label>
+						<input type="radio" id="tiene_iluminacion_si" class="radio" name="tiene_iluminacion" required value="si">
+						<label class="label radio" for="tiene_iluminacion_no">NO</label>
+						<input type="radio" id="tiene_iluminacion_no" class = "radio" name="tiene_iluminacion" required value="no">
+					</div>
+					
 
-
-						<h4>3.3 Agua y saneamiento básico</h4>
-
-
-						<label for="" class="cuestionario3">¿Cuál es la principal fuente de abastecimiento de agua para
-							consumo humano en la vivienda?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="acueducto_por_empresa_prestadora" class="checkbox"
-								name="principal_fuente_de_agua"
-								value="Acueducto administrado por empresa prestadora (ESP)">
-							<label class="label checkbox" for="acueducto_por_empresa_prestadora">1. Acueducto
-								administrado por empresa prestadora (ESP)</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="agua_embotellada_o_en_bolsa" class="checkbox"
-								name="principal_fuente_de_agua" value="Agua embotellada o en bolsa">
-							<label class="label checkbox" for="agua_embotellada_o_en_bolsa">2. Agua embotellada o en
-								bolsa</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="acueducto_veredal_comunitario" class="checkbox"
-								name="principal_fuente_de_agua" value="Acueducto veredal o comunitario">
-							<label class="label checkbox" for="acueducto_veredal_comunitario">3. Acueducto veredal o
-								comunitario</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="pila_publica" class="checkbox" name="principal_fuente_de_agua"
-								value="Pila pública">
-							<label class="label checkbox" for="pila_publica">4. Pila pública</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="carro_tanque" class="checkbox" name="principal_fuente_de_agua"
-								value="Carro tanque">
-							<label class="label checkbox" for="carro_tanque">5. Carro tanque</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="abasto_con_distribucion_comunitaria" class="checkbox"
-								name="principal_fuente_de_agua" value="Abasto con distribución comunitaria">
-							<label class="label checkbox" for="abasto_con_distribucion_comunitaria">6. Abasto con
-								distribución comunitaria</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="pozo_con_bomba" class="checkbox" name="principal_fuente_de_agua"
-								value="Pozo con bomba">
-							<label class="label checkbox" for="pozo_con_bomba">7. Pozo con bomba</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="pozo_sin_bomba_o_aljibe" class="checkbox"
-								name="principal_fuente_de_agua" value="Pozo sin bomba, aljibe, jaguey o barreno">
-							<label class="label checkbox" for="pozo_sin_bomba_o_aljibe">8. Pozo sin bomba, aljibe,
-								jaguey o barreno</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="laguna_jaguey" class="checkbox" name="principal_fuente_de_agua"
-								value="Laguna o jaguey">
-							<label class="label checkbox" for="laguna_jaguey">9. Laguna o jaguey</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="rio_quebrada_manantial" class="checkbox"
-								name="principal_fuente_de_agua" value="Rio, quebrada, manantial o nacimiento">
-							<label class="label checkbox" for="rio_quebrada_manantial">10. Rio, quebrada, manantial o
-								nacimiento</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="aguas_lluvias" class="checkbox" name="principal_fuente_de_agua"
-								value="Aguas lluvias">
-							<label class="label checkbox" for="aguas_lluvias">11. Aguas lluvias</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="aguatero" class="checkbox" name="principal_fuente_de_agua"
-								value="Aguatero">
-							<label class="label checkbox" for="aguatero">12. Aguatero</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="principal_fuente_de_agua_otro" class="checkbox"
-								name="principal_fuente_de_agua" value="Otro">
-							<label class="label checkbox" for="principal_fuente_de_agua_otro">13. Otro</label>
-						</div>
-
-
-
-
-
-
-						<label for="" class="cuestionario3">¿Cuál es el sistema de disposición de excretas en la
-							vivienda?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_conectado_a_alcantarillado" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas"
-								value="Sanitario conectado al alcantarillado">
-							<label class="label checkbox" for="sanitario_conectado_a_alcantarillado">1. Sanitario
-								conectado al alcantarillado</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_y_letrina" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas" value="Sanitario y letrina">
-							<label class="label checkbox" for="sanitario_y_letrina">2. Sanitario y letrina</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_conectado_a_pozo_septico" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas"
-								value="Sanitario conectado a pozo séptico">
-							<label class="label checkbox" for="sanitario_conectado_a_pozo_septico">3. sanitario
-								conectado a pozo séptico</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_ecologico_seco" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas" value="Sanitario ecológico seco">
-							<label class="label checkbox" for="sanitario_ecologico_seco">4. Sanitario ecológico
-								seco</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_sin_conexion" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas" value="Sanitario sin conexión">
-							<label class="label checkbox" for="">5. Sanitario sin conexión</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sanitario_con_disposicion_a_fuente_hidrica" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas"
-								value="Sanitario con disposición a fuente hídrica">
-							<label class="label checkbox" for="sanitario_con_disposicion_a_fuente_hidrica">6. Sanitario
-								con disposición a fuente hídrica</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="disposicion_excretas_a_campo_abierto" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_excretas" value="Campo abierto">
-							<label class="label checkbox" for="disposicion_excretas_a_campo_abierto">7. Campo
-								abierto</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="cual_es_el_sistema_de_disposicion_de_excretas_otro"
-								class="checkbox" name="cual_es_el_sistema_de_disposicion_de_excretas" value="Otro">
-							<label class="label checkbox" for="cual_es_el_sistema_de_disposicion_de_excretas_otro">8.
-								Otro</label>
-						</div>
-
-
-
-
-
-						<label for="" class="cuestionario3">¿Cuál es el sistema de disposición de aguas residuales
-							domésticas en la vivienda?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_alcantarillado" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Alcantarillado">
-							<label class="label checkbox" for="sistema_alcantarillado">1. Alcantarillado</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_pozo_septico" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Pozo séptico">
-							<label class="label checkbox" for="sistema_pozo_septico">2. Pozo séptico</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_campo_oxidacion" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Campo de oxidación">
-							<label class="label checkbox" for="sistema_campo_oxidacion">3. Campo de oxidación</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_biofiltro" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Biofiltro">
-							<label class="label checkbox" for="sistema_biofiltro">4. Biofiltro</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_fuente_hidrica" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Fuente hídrica">
-							<label class="label checkbox" for="sistema_fuente_hidrica">5. Fuente hídrica</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sistema_campo_abierto" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_aguas_residuales" value="Campo abierto">
-							<label class="label checkbox" for="sistema_campo_abierto">6. Campo abierto</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="cual_es_el_sistema_de_disposicion_de_aguas_residuales_otro"
-								class="checkbox" name="cual_es_el_sistema_de_disposicion_de_aguas_residuales"
-								value="Otro">
-							<label class="label checkbox"
-								for="cual_es_el_sistema_de_disposicion_de_aguas_residuales_otro">7. Otro</label>
-						</div>
-
-
-
-
-						<label for="" class="cuestionario3">¿Como se realiza la disposición final de los residuos
-							sólidos ordinarios de la vivienda?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="recoleccion_por_parte_servicio_aseo" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_residuos_solidos"
-								value="Recolección por parte del servicio de aseo distrital o municipal">
-							<label class="label checkbox" for="recoleccion_por_parte_servicio_aseo">1. Recolección por
-								parte del servicio de aseo distrital o municipal</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="enterramiento" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_residuos_solidos" value="Enterramiento">
-							<label class="label checkbox" for="enterramiento">2. Enterramiento</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="quema_a_campo_abierto" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_residuos_solidos"
-								value="Quema a campo abierto">
-							<label class="label checkbox" for="quema_a_campo_abierto">3. Quema a campo abierto</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="disposicion_en_fuente_de_agua_cercana" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_residuos_solidos"
-								value="Disposición en fuentes de agua cercana">
-							<label class="label checkbox" for="disposicion_en_fuente_de_agua_cercana">4. Disposición en
-								fuentes de agua cercana</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="disposicion_a_campo_abierto" class="checkbox"
-								name="cual_es_el_sistema_de_disposicion_de_residuos_solidos"
-								value="Dispocisión a campo abierto">
-							<label class="label checkbox" for="disposicion_a_campo_abierto">5. Dispocisión a campo
-								abierto</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="cual_es_el_sistema_de_disposicion_de_residuos_solidos_otro"
-								class="checkbox" name="cual_es_el_sistema_de_disposicion_de_residuos_solidos"
-								value="Otro">
-							<label class="label checkbox"
-								for="cual_es_el_sistema_de_disposicion_de_residuos_solidos_otro">6. Otro</label>
-						</div>
-
-
-
-					</section>
 				</li>
+				<li>
+					<label class = "label cuestionario1" for="tiene_ventilacion">14. Tiene ventilación</label>
+					<div class="group_radio">
+						<label class="label radio" for="tiene_ventilacion_si">SI</label>
+						<input type="radio" id="tiene_ventilacion_si" class="radio" name="tiene_ventilacion" required value="si">
+						<label class="label radio" for="tiene_ventilacion_no">NO</label>
+						<input type="radio" id="tiene_ventilacion_no" class = "radio" name="tiene_ventilacion" required value="no">
+					</div>
 
 
+				</li>
+				<li>
+					<label class = "label cuestionario1" for="disponibilidad_espejo">15. Disponibilidad de espejo</label>
+					<div class="group_radio">
+						<label class="label radio" for="disponibilidad_espejo_si">SI</label>
+						<input type="radio" id="disponibilidad_espejo_sipo" class="radio" name="disponibilidad_espejo" required value="si">
+						<label class="label radio" for="disponibilidad_espejo_no">NO</label>
+						<input type="radio" id="disponibilidad_espejo_no" class = "radio" name="disponibilidad_espejo" required value="no">
+					</div>
+					
+
+				</li>
 
 			</ul>
 
 
-			<h3>4. Caracterizacion de la Familia</h3>
+			<label class = "label cuestionario1" for="">Elementos de higiene oral con que dispone al momento de la visita</label>
 
-			<ul id="ul_cuestionario4">
-				<li>
+			<ul>
+				<li> 
 
-					<section class="section cuestionario4">
-						<h4>4.1 Estructura y contexto familiar</h4>
-
-
-						<label for="tipo_familia" class="label cuestionario4">Tipo de familia</label>
-						<select type="text" id="tipo_familia" name="tipo_familia" value="" placeholder="">
-
-							<option value="none">Seleccione Una</option>
-
-							<option value="Nuclear biparental">1. Nuclear biparental</option>
-							<option value="Nuclear monoparental">2. Nuclear monoparental</option>
-							<option value="Extenso biparental">3. Extenso biparental</option>
-							<option value="Extenso monoparental">4. Extenso monoparental</option>
-							<option value="Compuesto biparental">5. Compuesto biparental</option>
-							<option value="Compuesto monoparental">6. Compuesto monoparental</option>
-							<option value="Unipersonal">7. Unipersonal</option>
-
-
-						</select>
-
-
-
-						<label class="label cuestionario4" for="numero_de_integrantes_de_la_familia">Número de personas
-							que conforman la familia: <span class="aclaracion">Número de integrantes de la
-								familia</span></label>
-						<input id="numero_de_integrantes_de_la_familia" type="number"
-							name="numero_de_integrantes_de_la_familia" value="" placeholder="6">
-
-
-
-
-
-
-						<label for="" class="cuestionario4">¿Estructura familiar y dinámica familiar? <span
-								class="aclaracion">Resultado del familiograma</span></label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="biologicos" class="checkbox"
-								name="estructura_familiar_y_dinamica_familiar" value="Biológicos">
-							<label class="label checkbox" for="biologicos">1. Biológicos</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="psicologicos" class="checkbox"
-								name="estructura_familiar_y_dinamica_familiar" value="Psicológicos">
-							<label class="label checkbox" for="psicologicos">2. Psicológicos</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="sociales" class="checkbox"
-								name="estructura_familiar_y_dinamica_familiar" value="Sociales">
-							<label class="label checkbox" for="sociales">3. Sociales</label>
-						</div>
-
-
-
-
-						<label for="funcionalidad_de_la_familia" class="label cuestionario4">Funcionalidad de la
-							familia: <span class="aclaracion">Resultado del APGAR</span></label>
-						<select type="text" id="funcionalidad_de_la_familia" name="funcionalidad_de_la_familia" value=""
-							placeholder="">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Normal">1. Normal</option>
-							<option value="Disfunción leve">2. Disfunción leve</option>
-							<option value="Disfunción moderada">3. Disfunción moderada</option>
-							<option value="Disfunción severa">4. Disfunción severa</option>
-
-
-
-
-						</select>
-
-
-						<label for="" class="cuestionario4 obligatoria">¿En la familia se identifica un cuidador principal de niños,
-							niñas, persona con discapacidad, adulto mayor o enfermedad?</label>
-
-						<div class="group_radio">
-							<label class="label radio" for="hay_cuidador_si">SI</label>
-							<input  type="radio" id="hay_cuidador_si" class="radio"
-								name="hay_cuidador_de_adutos_o_menores" value="si" required>
-							<label class="label radio" for="hay_cuidador_no">NO</label>
-							<input type="radio" id="hay_cuidador_no" class="radio"
-								name="hay_cuidador_de_adutos_o_menores" value="no" required>
-						</div>
-
-						<!--  -->
-
-						<label for="escala_zarit" class="label cuestionario4 obligatoria">Si la respuesta anterior es SI aplicar ZARIT y registre aqui el resultado - <span class="aclaracion">para determinar si se requiere intervención individual o familiar</span></label>
-						<select type="text" id="escala_zarit" name="escala_zarit" value="" placeholder="">
-
-							<option value="none" selected disabled>Seleccione Una</option>
-
-							<option value="Ausencia de sobrecarga (si es menor o igual a 46)">1. Ausencia de sobrecarga (si es menor o igual a 46)</option>
-							<option value="Sobrecarga ligera (si esta entre 47 y 55)">2. Sobrecarga ligera (si esta entre 47 y 55)</option>
-							<option value="Sobrecarga intensa (si es mayor o igual a 56)">3. Sobrecarga intensa (si es mayor o igual a 56)</option>
-
-						
-
-
-						</select>
-
-
-						<!--  -->
-
-
-						<label for="ecomapa" class="label cuestionario4 obligatoria">Ecomapa</label>
-						<select type="text" id="ecomapa" name="ecomapa" value="" placeholder="" required>
-							<option value="none" selected disabled>Seleccione Una</option>
-
-							<option value="Positivo">1. Positivo</option>
-							<option value="Tenue">2. Tenue</option>
-							<option value="Estresante">3. Estresante</option>
-							<option value="Fluye">4. Fluye</option>
-							<option value="Intenso">5. Intenso</option>
-
-
-						</select>
-
-
-					</section>
-
+					<label class = "label cuestionario1" for="cepillo_dental">16. Cepillo dental</label>
+					<div class="group_radio">
+						<label class="label radio" for="cepillo_dental_si">SI</label>
+						<input type="radio" id="cepillo_dental_si" class="radio" name="cepillo_dental" required value="si">
+						<label class="label radio" for="cepillo_dental_no">NO</label>
+						<input type="radio" id="cepillo_dental_no" class = "radio" name="cepillo_dental" required value="no">
+					</div>
 
 				</li>
 
 				<li>
-
-					<section class="section cuestionario4">
-
-						<h4>4.2 Situaciones o condiciones de especial condición</h4>
-
-
-						<label for="" class="cuestionario4">Familia con niñas, niños y adolescentes</label>
-
-
-						<div class="group_radio">
-							<label class="label radio" for="hay_menores_si">SI</label>
-							<input type="radio" id="hay_menores_si" class="radio" name="hay_menores_o_adolescentes"
-								value="si" >
-							<label class="label radio" for="hay_menores_no">NO</label>
-							<input type="radio" id="hay_menores_no" class="radio" name="hay_menores_o_adolescentes"
-								value="no" >
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">Gestante en la familia</label>
-
-
-						<div class="group_radio">
-							<label class="label radio" for="hay_gestante_si">SI</label>
-							<input type="radio" id="hay_gestante_si" class="radio" name="hay_gestante_en_la_familia"
-								value="si">
-							<label class="label radio" for="hay_gestante_no">NO</label>
-							<input type="radio" id="hay_gestante_no" class="radio" name="hay_gestante_en_la_familia"
-								value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">Familia con personas adultos mayores</label>
-
-						<div class="group_radio">
-							<label class="label radio" for="hay_adulto_mayor_si">SI</label>
-							<input type="radio" id="hay_adulto_mayor_si" class="radio"
-								name="hay_adulto_mayor_en_la_familia" value="si">
-							<label class="label radio" for="hay_adulto_mayor_no">NO</label>
-							<input type="radio" id="hay_adulto_mayor_no" class="radio"
-								name="hay_adulto_mayor_en_la_familia" value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">Familia víctima del conflicto armado</label>
-
-						<div class="group_radio">
-							<label class="label radio" for="familia_victima_de_conflicto_si">SI</label>
-							<input type="radio" id="familia_victima_de_conflicto_si" class="radio"
-								name="familia_victima_de_conflicto" value="si">
-							<label class="label radio" for="familia_victima_de_conflicto_no">NO</label>
-							<input type="radio" id="familia_victima_de_conflicto_no" class="radio"
-								name="familia_victima_de_conflicto" value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">Familia que convive con personas con discapacidad</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="familia_que_convive_con_personas_con_discapacidad_si">SI</label>
-							<input type="radio" id="familia_que_convive_con_personas_con_discapacidad_si" class="radio"
-								name="familia_que_convive_con_personas_con_discapacidad" value="si">
-							<label class="label radio"
-								for="familia_que_convive_con_personas_con_discapacidad_no">NO</label>
-							<input type="radio" id="familia_que_convive_con_personas_con_discapacidad_no" class="radio"
-								name="familia_que_convive_con_personas_con_discapacidad" value="no">
-						</div>
-
-
-
-						<label for="" class="cuestionario4">Familia que convive con personas que presentan alguna
-							enfermedad crónica, huérfana o en estado terminal</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_si">SI</label>
-							<input type="radio" id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_si"
-								class="radio" name="familia_que_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="si">
-							<label class="label radio"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_no">NO</label>
-							<input type="radio" id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_no"
-								class="radio" name="familia_que_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="no">
-						</div>
-
-
-
-
-
-
-
-						<!-- POR EDITAR FOR Y ID  -->
-
-
-						<label for="" class="cuestionario4">Familia que convive con persona que presentan alguna
-							enfermedad transmisible</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_tb"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="TB">
-							<label class="label checkbox"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_tb">1. TB</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_lepra"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Lepra">
-							<label class="label checkbox"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_lepra">2.
-								Lepra</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_escabiosos"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Escabiosos, enfermedades infecciosas de la piel u otras">
-							<label class="label checkbox"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_escabiosos">3.
-								Escabiosos, enfermedades infecciosas de la piel u otras</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_malaria"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Malaria">
-							<label class="label checkbox"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_malaria">4.
-								Malaria</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_dengue"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Dengue">
-							<label class="label checkbox"
-								for="familia_que_convive_con_personas_que_presentan_alguna_enfermedad_dengue">5.
-								Dengue</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_changas"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Changas">
-							<label class="label checkbox"
-								for="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_changas">6.
-								Changas</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_hepatitis"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Hepatitis A">
-							<label class="label checkbox"
-								for="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_hepatitis">7.
-								Hepatitis A</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_inmunoprevenible"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Alguna enfermedad inmunoprevenible (Varicela-Parotiditis, otra)">
-							<label class="label checkbox"
-								for="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_inmunoprevenible">8.
-								Alguna enfermedad inmunoprevenible (Varicela-Parotiditis, otra)</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_otra"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Otra">
-							<label class="label checkbox"
-								for="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_otra">9.
-								Otra</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_ninguna"
-								class="checkbox" name="la_familia_convive_con_personas_que_presentan_alguna_enfermedad"
-								value="Ninguna">
-							<label class="label checkbox"
-								for="la_familia_convive_con_personas_que_presentan_alguna_enfermedad_ninguna">Ninguna</label>
-						</div>
-
-
-
-
-
-
-						<label for="" class="cuestionario4">Familia con vivencia de sucesos vitales normativos y no
-							normativos</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="familia_con_vivencia_vitales_normativos_y_no_normativos_si">SI</label>
-							<input type="radio" id="familia_con_vivencia_vitales_normativos_y_no_normativos_si"
-								class="radio" name="familia_con_vivencia_vitales_normativos_y_no_normativos" value="si">
-							<label class="label radio"
-								for="familia_con_vivencia_vitales_normativos_y_no_normativos_no">NO</label>
-							<input type="radio" id="familia_con_vivencia_vitales_normativos_y_no_normativos_no"
-								class="radio" name="familia_con_vivencia_vitales_normativos_y_no_normativos" value="no">
-						</div>
-
-
-						<!--  -->
-
-
-						<label for="" class="cuestionario4">Familia en situación de vulneravilidad social <span class="aclaracion">(Consumo de SPA, explotación sexual, trabajo infantil, conflictos interpersonales, violencia, entre otros)</span></label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="familia_en_situacion_vulnerabilidad_social_si">SI</label>
-							<input type="radio" id="familia_en_situacion_vulnerabilidad_social_si"
-								class="radio" name="familia_en_situacion_vulnerabilidad_social" value="si">
-							<label class="label radio"
-								for="familia_en_situacion_vulnerabilidad_social_no">NO</label>
-							<input type="radio" id="familia_en_situacion_vulnerabilidad_social_no"
-								class="radio" name="familia_en_situacion_vulnerabilidad_social" value="no">
-						</div>
-
-						<!--  -->
-
-
-
-
-
-
-						<label for="" class="cuestionario4">Familia con prácticas de cuidado de salud críticas de varios
-							de sus integrantes que ponen en riesgo o han afectado en la salud <span class="aclaracion">Hábitos alimenticios, situaciones de abandono</span></label>
-
-						<div class="group_radio">
-							<label class="label radio" for="familia_con_practicas_de_cuidado_de_salud_si">SI</label>
-							<input type="radio" id="familia_con_practicas_de_cuidado_de_salud_si" class="radio"
-								name="familia_con_practicas_de_cuidado_de_salud" value="si">
-							<label class="label radio" for="familia_con_practicas_de_cuidado_de_salud_no">NO</label>
-							<input type="radio" id="familia_con_practicas_de_cuidado_de_salud_no" class="radio"
-								name="familia_con_practicas_de_cuidado_de_salud" value="no">
-						</div>
-
-
-
-
-
-
-						<label for="" class="cuestionario4">Familia con integrantes con antecedentes de Cáncer, HTA,
-							Diabetes, Asma, Enfermedad cardiaca, otra</label>
-
-						<div class="group_radio">
-							<label class="label radio" for="famila_con_antecedentes_de_enfermedad_si">SI</label>
-							<input type="radio" id="famila_con_antecedentes_de_enfermedad_si" class="radio"
-								name="famila_con_antecedentes_de_enfermedad" value="si">
-							<label class="label radio" for="famila_con_antecedentes_de_enfermedad_no">NO</label>
-							<input type="radio" id="famila_con_antecedentes_de_enfermedad_no" class="radio"
-								name="famila_con_antecedentes_de_enfermedad" value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">¿Cual?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_ca" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="Ca">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_ca">1. Ca</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_hta" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="HTA">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_hta">2. HTA</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_diabetes" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="Diabetes">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_diabetes">3. Diabetes</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_asma" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="Asma">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_asma">4. Asma</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_cardiaca" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="Enfermedad Cardiaca">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_cardiaca">4. Enfermedad Cardiaca</label>
-
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="famila_con_antecedentes_de_enfermedad_otra" class="checkbox"
-								name="famila_con_antecedentes_de_enfermedad_cual" value="Otra">
-							<label class="label checkbox" for="famila_con_antecedentes_de_enfermedad_otra">5. Otra</label>
-							
-						</div>
-
-
-
-
-
-						<label for="" class="cuestionario4">¿Cómo obtiene sus alimentos?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_cultiva" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Cultiva">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_cultiva">1. Cultiva</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_cria_de_animales" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Cría de animales">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_cria_de_animales">2. Cría de
-								animales</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_caceria" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Cacería">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_caceria">3. Cacería</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_recoleccion_alimentos"
-								class="checkbox" name="como_obtienen_sus_alimentos" value="Recolección de alimentos">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_recoleccion_alimentos">4.
-								Recolección de alimentos</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_trueque" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Trueque o intercambio">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_trueque">5. Trueque o
-								intercambio</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_compra" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Compra">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_compra">6. Compra</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_asitencia_estado" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Asistencia del estado">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_asitencia_estado">7.
-								Asistencia del estado</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_ayuda_h" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Ayuda humanitaria">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_ayuda_h">8. Ayuda
-								humanitaria</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_salario" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Salario">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_salario">9. Salario</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="como_obtienen_sus_alimentos_otro" class="checkbox"
-								name="como_obtienen_sus_alimentos" value="Otro">
-							<label class="label checkbox" for="como_obtienen_sus_alimentos_otro">10. Otro</label>
-						</div>
-
-
-
-					</section>
-
-
-
+					<label class = "label cuestionario1" for="crema_dental">17.Crema Dental</label>
+					<div class="group_radio">
+						<label class="label radio" for="crema_dental_si">SI</label>
+						<input type="radio" id="crema_dental_si" class="radio" name="crema_dental" required value="si">
+						<label class="label radio" for="crema_dental_no">NO</label>
+						<input type="radio" id="crema_dental_no" class = "radio" name="crema_dental" required value="no">
+					</div>
+					
 
 				</li>
 				<li>
-
-					<section class="section cuestionario4">
-
-						<h4>4.3 Prácticas o condiciones protectoras para el cuidado de la salud predominantes en la
-							familia</h4>
-<!-- 
-						<label for="" class="cuestionario4">Prácticas o condiciones protectoras para el cuidado de la
-							salud predominantes en la familia</label>
-
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud_si">SI</label>
-							<input type="radio" id="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud_si"
-								class="radio" name="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud"
-								value="si">
-							<label class="label radio"
-								for="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud_no">NO</label>
-							<input type="radio" id="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud_no"
-								class="radio" name="practicas_o_condiciones_protectoras_para_el_cuidado_de_salud"
-								value="no">
-						</div> -->
-
-
-						<label for="" class="cuestionario4">Hábitos de vida saludable adaptado a las condiciones contextuales y culturales de la familia y sus integrantes</label>
-							
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="habitos_de_vida_saludable_si">SI</label>
-							<input type="radio" id="habitos_de_vida_saludable_si"
-								class="radio" name="habitos_de_vida_saludable"
-								value="si">
-							<label class="label radio"
-								for="habitos_de_vida_saludable_no">NO</label>
-							<input type="radio" id="habitos_de_vida_saludable_no"
-								class="radio" name="habitos_de_vida_saludable"
-								value="no">
-						</div>
-
-
-
-
-						<label for="" class="cuestionario4">Recursos socioemocionales que potencian el cuidado el
-							cuidado de la salud de la familia</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="recursos_socioemocionales_que_potencia_el_cuidado_de_salud_si">SI</label>
-							<input type="radio" id="recursos_socioemocionales_que_potencia_el_cuidado_de_salud_si"
-								class="radio" name="recursos_socioemocionales_que_potencia_el_cuidado_de_salud"
-								value="si">
-							<label class="label radio"
-								for="recursos_socioemocionales_que_potencia_el_cuidado_de_salud_no">NO</label>
-							<input type="radio" id="recursos_socioemocionales_que_potencia_el_cuidado_de_salud_no"
-								class="radio" name="recursos_socioemocionales_que_potencia_el_cuidado_de_salud"
-								value="no">
-						</div>
-
-
-
-						<label for="" class="cuestionario4">Prácticas para el cuidado y protección de los
-							entornos</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="practicas_para_el_cuidado_y_proteccion_de_los_entornos_si">SI</label>
-							<input type="radio" id="practicas_para_el_cuidado_y_proteccion_de_los_entornos_si"
-								class="radio" name="practicas_para_el_cuidado_y_proteccion_de_los_entornos" value="si">
-							<label class="label radio"
-								for="practicas_para_el_cuidado_y_proteccion_de_los_entornos_no">NO</label>
-							<input type="radio" id="practicas_para_el_cuidado_y_proteccion_de_los_entornos_no"
-								class="radio" name="practicas_para_el_cuidado_y_proteccion_de_los_entornos" value="no">
-						</div>
-
-
-						<label for="" class="cuestionario4">Prácticas que favorecen el establecimiento de las relaciones
-							sanas y constructivas</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas_si">SI</label>
-							<input type="radio" id="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas_si"
-								class="radio" name="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas"
-								value="si">
-							<label class="label radio"
-								for="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas_no">NO</label>
-							<input type="radio" id="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas_no"
-								class="radio" name="practicas_que_favorecen_el_establecimiento_de_relaciones_sanas"
-								value="no">
-						</div>
-
-
-
-						<label for="" class="cuestionario4">Recursos sociales y comunitarios para el establecimiento de
-							redes colectivas para la promoción de la salud</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="recursos_sociales_para_el_establecimiento_de_redes_colectivas_si">SI</label>
-							<input type="radio" id="recursos_sociales_para_el_establecimiento_de_redes_colectivas_si"
-								class="radio" name="recursos_sociales_para_el_establecimiento_de_redes_colectivas"
-								value="si">
-							<label class="label radio"
-								for="recursos_sociales_para_el_establecimiento_de_redes_colectivas_no">NO</label>
-							<input type="radio" id="recursos_sociales_para_el_establecimiento_de_redes_colectivas_no"
-								class="radio" name="recursos_sociales_para_el_establecimiento_de_redes_colectivas"
-								value="no">
-						</div>
-
-
-						<label for="" class="cuestionario4">Prácticas para la conservación de la autonomía y la
-							capacidad funcional de las personas mayores</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional_si">SI</label>
-							<input type="radio"
-								id="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional_si"
-								class="radio"
-								name="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional" value="si">
-							<label class="label radio"
-								for="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional_no">NO</label>
-							<input type="radio"
-								id="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional_no"
-								class="radio"
-								name="practicas_para_la_conservacion_de_autonomia_y_la_capacidad_funcional" value="no">
-						</div>
-
-
-						<label for="" class="cuestionario4">Prácticas para la prevención de enfermedades en todas las
-							edades</label>
-
-						<div class="group_radio">
-							<label class="label radio" for="practicas_para_la_prevencion_de_enfermedades_si">SI</label>
-							<input type="radio" id="practicas_para_la_prevencion_de_enfermedades_si" class="radio"
-								name="practicas_para_la_prevencion_de_enfermedades" value="si">
-							<label class="label radio" for="practicas_para_la_prevencion_de_enfermedades_no">NO</label>
-							<input type="radio" id="practicas_para_la_prevencion_de_enfermedades_no" class="radio"
-								name="practicas_para_la_prevencion_de_enfermedades" value="no">
-						</div>
-
-
-						<label for="" class="cuestionario4">Prácticas de cuidado desde los saberes
-							ancestrales/tradicionales <span class="aclaracion">Aplica para poblacionesy comunidades
-								indígenas, negras afrocolombianas, raizales, palenqueras y rom</span></label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="practicas_para_el_cuidado_desde_los_saberes_ancestrales_si">SI</label>
-							<input type="radio" id="practicas_para_el_cuidado_desde_los_saberes_ancestrales_si"
-								class="radio" name="practicas_para_el_cuidado_desde_los_saberes_ancestrales" value="si">
-							<label class="label radio"
-								for="practicas_para_el_cuidado_desde_los_saberes_ancestrales_no">NO</label>
-							<input type="radio" id="practicas_para_el_cuidado_desde_los_saberes_ancestrales_no"
-								class="radio" name="practicas_para_el_cuidado_desde_los_saberes_ancestrales" value="no">
-						</div>
-
-
-						<label for="" class="cuestionario4">Capacidades de las familias para el ejercicio y exigibilidad
-							del derecho a la salud</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud_si">SI</label>
-							<input  type="radio"
-								id="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud_si"
-								class="radio"
-								name="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud" value="si">
-							<label class="label radio"
-								for="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud_no">NO</label>
-							<input  type="radio"
-								id="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud_no"
-								class="radio"
-								name="capacidades_de_las_familias_para_el_ejercicio_del_derecho_a_la_salud" value="no">
-						</div>
-
-
-
-						<!-- POR AÑADIR FOR Y ID -->
-					</section>
-
-				</li>
-
-				
-
-				<li id="li_agregar_integrante" class="integrantes_de_la_familia">
-					<section class="section cuestionario4 integrantes_familia">
-
-						<h4>INTEGRANTE DE LA FAMILIA</h4>
-
-
-						<label class="label cuestionario4" for="primer_nombre">Primer nombre</label>
-						<input id="primer_nombre" type="text" name="primer_nombre" value="" placeholder="JUAN">
-
-						<label class="label cuestionario4" for="segundo_nombre">Segundo nombre</label>
-						<input id="segundo_nombre" type="text" name="segundo_nombre" value="" placeholder="CARLOS">
-
-						<label class="label cuestionario4" for="primer_apellido">Primer apellido</label>
-						<input id="primer_apellido" type="text" name="primer_apellido" value="" placeholder="RIVERA">
-
-						<label class="label cuestionario4" for="segundo_apellido">Segundo apellido</label>
-						<input id="segundo_apellido" type="text" name="segundo_apellido" value="" placeholder="CAMPO">
-
-
-						<label for="tipo_documento_persona" class="cuestionario4">Tipo de documento</label>
-						<select type="text" name="tipo_documento_persona" id="tipo_documento_persona">
-							<option value="none" selected disabled>Seleccione Una</option>
-
-							<option value="AS-Adulto sin identificación">AS-Adulto sin identificación</option>
-							<option value="CC-Cedula de ciudadania">CC-Cedula de ciudadania</option>
-							<option value="CD-Carnet diplomatico">CD-Carnet diplomatico</option>
-							<option value="CE-Cedula de extranjeria">CE-Cedula de extranjeria</option>
-							<option value="MS-Menor sin identificación">MS-Menor sin identificación</option>
-							<option value="CN-Certificado de nacido vivo">CN-Certificado de nacido vivo</option>
-							<option value="PE-Permiso especial de permanecia">PE-Permiso especial de permanecia</option>
-							<option value="PT-Permiso por protección temporal">PT-Permiso por protección temporal
-							</option>
-							<option value="RC-Registro Civil">RC-Registro Civil</option>
-							<option value="TI-Tarjeta de identidad">TI-Tarjeta de identidad</option>
-
-						</select>
-
-
-						<label class="label cuestionario4" for="numero_identificacion_persona">Número de
-							identificación</label>
-						<input id="numero_identificacion_persona" type="number" name="numero_identificacion_persona"
-							value="" placeholder="88332068">
-
-
-						<label class="label cuestionario4" for="fecha_nacimiento">Fecha de nacimiento</label>
-						<input id="fecha_nacimiento" type="date" name="fecha_nacimiento" value="" placeholder="">
-
-
-						<label for="sexo" class="cuestionario4">Sexo</label>
-						<select type="text" name="sexo" id="sexo">
-							<option value="none" selected disabled>Seleccione Una</option>
-
-							<option value="Hombre">1. Hombre</option>
-							<option value="Mujer">2. Mujer</option>
-							<option value="Indeterminado">3. Indeterminado</option>
-
-						</select>
-
-
-
-						<label for="rol_dentro_de_la_familia" class="cuestionario4">Rol dentro de la familia</label>
-						<select type="text" name="rol_dentro_de_la_familia" id="rol_dentro_de_la_familia">
-							<option value="none" selected disabled>Seleccione Una</option>
-
-							<option value="Jefe de familia">1. Jefe de familia</option>
-							<option value="conyuge">2. Cónyuge</option>
-							<option value="Hijo">3. Hijo</option>
-							<option value="hermano_o_hermana">4. Hermano(a)</option>
-							<option value="Padre o Madre">5. Padre o Madre</option>
-							<option value="Otro">6. Otro</option>
-
-
-
-						</select>
-
-
-						<label for="ocupacion" class="cuestionario4">Ocupación</label>
-						<select type="text" name="ocupacion" id="ocupacion">
-							<option value="none">Seleccione Una</option>
-
-
-							<option value="110">Oficiales de las Fuerzas Militares</option>
-							<option value="210">Suboficiales de las Fuerzas Militares</option>
-							<option value="310">Otros miembros de las Fuerzas Militares</option>
-							<option value="1111">Directores formuladores de políticas y normas</option>
-							<option value="1112">Directores del gobierno</option>
-							<option value="1113">Jefes de comunidades étnicas</option>
-							<option value="1114">Dirigentes de organizaciones con un interés específico partidos
-								políticos, sindicatos y organizaciones sociales</option>
-							<option value="1120">Directores y gerentes generales</option>
-							<option value="1211">Directores financieros</option>
-							<option value="1212">Directores de recursos humanos</option>
-							<option value="1213">Directores de políticas y planificación</option>
-							<option value="1219">Directores de administración y servicios no clasificados en otros
-								grupos primarios</option>
-							<option value="1221">Directores de ventas y comercialización</option>
-							<option value="1222">Directores de publicidad y relaciones públicas</option>
-							<option value="1223">Directores de investigación y desarrollo</option>
-							<option value="1311">Directores de producción agropecuaria y silvicultura</option>
-							<option value="1312">Directores de producción de piscicultura y pesca</option>
-							<option value="1321">Directores de industrias manufactureras</option>
-							<option value="1322">Directores de explotaciones de minería</option>
-							<option value="1323">Directores de empresas de construcción</option>
-							<option value="1324">Directores de empresas de abastecimiento, distribución y afines
-							</option>
-							<option value="1330">Directores de servicios de tecnología de la información y las
-								comunicaciones</option>
-							<option value="1341">Directores de servicios de cuidados infantiles</option>
-							<option value="1342">Directores de servicios de salud</option>
-							<option value="1343">Directores de servicios de atención a personas mayores</option>
-							<option value="1344">Directores de servicios de bienestar social</option>
-							<option value="1345">Directores de servicios de educación</option>
-							<option value="1346">Gerentes de sucursales de bancos, de servicios financieros y de seguros
-							</option>
-							<option value="1349">Directores y gerentes de servicios profesionales no clasificados en
-								otros grupos primarios</option>
-							<option value="1411">Gerentes de hoteles</option>
-							<option value="1412">Gerentes de restaurantes</option>
-							<option value="1420">Gerentes de comercios al por mayor y al por menor</option>
-							<option value="1431">Gerentes de centros deportivos, de esparcimiento y culturales</option>
-							<option value="1439">Otros gerentes de servicios no clasificados en otros grupos primarios
-							</option>
-							<option value="2111">Físicos y astrónomos</option>
-							<option value="2112">Meteorólogos</option>
-							<option value="2113">Químicos</option>
-							<option value="2114">Geólogos y geofísicos</option>
-							<option value="2120">Matemáticos, actuarios y estadísticos</option>
-							<option value="2131">Biólogos, botánicos, zoólogos y afines</option>
-							<option value="2132">Agrónomos, silvicultores, zootecnistas y afines</option>
-							<option value="2133">Profesionales de la protección medioambiental</option>
-							<option value="2141">Ingenieros industriales y de producción</option>
-							<option value="2142">Ingenieros civiles</option>
-							<option value="2143">Ingenieros medioambientales</option>
-							<option value="2144">Ingenieros mecánicos</option>
-							<option value="2145">Ingenieros químicos</option>
-							<option value="2146">Ingenieros de minas, metalúrgicos y afines</option>
-							<option value="2149">Ingenieros no clasificados en otros grupos primarios</option>
-							<option value="2151">Ingenieros electricistas</option>
-							<option value="2152">Ingenieros electrónicos</option>
-							<option value="2153">Ingenieros de telecomunicaciones</option>
-							<option value="2161">Arquitectos constructores</option>
-							<option value="2162">Arquitectos paisajistas</option>
-							<option value="2163">Diseñadores de productos y de prendas</option>
-							<option value="2164">Planificadores urbanos, regionales y de tránsito</option>
-							<option value="2165">Cartógrafos y topógrafos</option>
-							<option value="2166">Diseñadores gráficos y multimedia</option>
-							<option value="2211">Médicos generales</option>
-							<option value="2212">Médicos especialistas</option>
-							<option value="2221">Profesionales de enfermería</option>
-							<option value="2222">Profesionales de partería</option>
-							<option value="2230">Profesionales de medicina tradicional y alternativa</option>
-							<option value="2240">Paramédicos e instrumentadores quirúrgicos</option>
-							<option value="2250">Veterinarios</option>
-							<option value="2261">Odontólogos</option>
-							<option value="2262">Farmacéuticos</option>
-							<option value="2263">Profesionales de la salud y la higiene laboral y ambiental</option>
-							<option value="2264">Fisioterapeutas</option>
-							<option value="2265">Dietistas y nutricionistas</option>
-							<option value="2266">Fonoaudiólogos y terapeutas del lenguaje</option>
-							<option value="2267">Optómetras</option>
-							<option value="2269">Otros profesionales de la salud no clasificados en otros grupos
-								primarios</option>
-							<option value="2310">Profesores de instituciones de educación superior</option>
-							<option value="2320">Profesores de formación profesional</option>
-							<option value="2330">Profesores de educación secundaria</option>
-							<option value="2341">Profesores de educación primaria</option>
-							<option value="2342">Profesores de primera infancia</option>
-							<option value="2351">Especialistas en métodos pedagógicos</option>
-							<option value="2352">Profesores de educación especial e inclusiva</option>
-							<option value="2353">Otros profesores de idiomas</option>
-							<option value="2354">Otros profesores de música</option>
-							<option value="2355">Otros profesores de artes</option>
-
-							<option value="2356">Instructores de tecnología de la información</option>
-							<option value="2359">Otros profesionales de la educación no clasificados en otros grupos
-								primarios</option>
-							<option value="2411">Contadores</option>
-							<option value="2412">Asesores financieros y de inversiones</option>
-							<option value="2413">Analistas financieros</option>
-							<option value="2421">Analistas de gestión y organización</option>
-							<option value="2422">Profesionales en políticas de administración</option>
-							<option value="2423">Profesionales de gestión de talento humano</option>
-							<option value="2424">Profesionales en formación y desarrollo de personal</option>
-							<option value="2431">Profesionales de la publicidad y la comercialización</option>
-							<option value="2432">Profesionales de relaciones públicas</option>
-							<option value="2433">Profesionales de ventas técnicas y médicas (excluyendo las TIC)
-							</option>
-							<option value="2434">Profesionales de ventas de tecnología de la información y las
-								comunicaciones</option>
-							<option value="2511">Analistas de sistemas</option>
-							<option value="2512">Desarrolladores de software</option>
-							<option value="2513">Desarrolladores web y multimedia</option>
-							<option value="2514">Programadores de aplicaciones</option>
-							<option value="2519">Desarrolladores y analistas de software y multimedia no clasificados en
-								otros grupos primarios</option>
-							<option value="2521">Diseñadores y administradores de bases de datos</option>
-							<option value="2522">Administradores de sistemas</option>
-							<option value="2523">Profesionales en redes de computadores</option>
-							<option value="2529">Profesionales en bases de datos y en redes de computadores no
-								clasificados en otros grupos primarios</option>
-							<option value="2611">Abogados</option>
-							<option value="2612">Jueces</option>
-							<option value="2619">Profesionales en derecho no clasificados en otros grupos primarios
-							</option>
-							<option value="2621">Archivistas y curadores de arte</option>
-							<option value="2622">Bibliotecarios, documentalistas y afines</option>
-							<option value="2631">Economistas</option>
-							<option value="2632">Sociólogos, antropólogos y afines</option>
-							<option value="2633">Filósofos, historiadores y especialistas en ciencias políticas</option>
-							<option value="2634">Psicólogos</option>
-							<option value="2635">Profesionales del trabajo social y consejeros</option>
-							<option value="2636">Profesionales religiosos</option>
-							<option value="2641">Autores y otros escritores</option>
-							<option value="2642">Periodistas</option>
-							<option value="2643">Traductores, intérpretes y otros lingüistas</option>
-							<option value="2651">Escultores, pintores artísticos y afines</option>
-							<option value="2652">Compositores, músicos y cantantes</option>
-							<option value="2653">Coreógrafos y bailarines</option>
-							<option value="2654">Directores y productores de cine, de teatro y afines</option>
-							<option value="2655">Actores</option>
-
-
-							<option value="2656">Locutores de radio, televisión y otros medios de comunicación</option>
-							<option value="2659">Artistas creativos e interpretativos no clasificados en otros grupos
-								primarios</option>
-							<option value="3111">Técnicos en ciencias físicas y químicas</option>
-							<option value="3112">Técnicos en ingeniería civil</option>
-							<option value="3113">Electrotécnicos</option>
-							<option value="3114">Técnicos en electrónica</option>
-							<option value="3115">Técnicos en ingeniería mecánica</option>
-							<option value="3116">Técnicos en química industrial</option>
-							<option value="3117">Técnicos de minas y metalurgia</option>
-							<option value="3118">Delineantes y dibujantes técnicos</option>
-							<option value="3119">Técnicos en ciencias físicas y en ingeniería no clasificados en otros
-								grupos primarios</option>
-							<option value="3121">Supervisores de minas</option>
-							<option value="3122">Supervisores de industrias manufactureras</option>
-							<option value="3123">Supervisores de la construcción</option>
-							<option value="3131">Operadores de plantas de producción de energía</option>
-							<option value="3132">Operadores de incineradores, instalaciones de tratamiento de agua y
-								afines</option>
-							<option value="3133">Controladores de instalaciones de procesamiento de productos químicos
-							</option>
-							<option value="3134">Operadores de instalaciones de refinación de petróleo y gas natural
-							</option>
-							<option value="3135">Operadores de procesos de producción de metales</option>
-							<option value="3139">Técnicos en control de procesos no clasificados en otros grupos
-								primarios</option>
-							<option value="3141">Técnicos en ciencias biológicas (excluyendo la medicina)</option>
-							<option value="3142">Técnicos agropecuarios</option>
-							<option value="3143">Técnicos forestales</option>
-							<option value="3151">Oficiales maquinistas en navegación</option>
-							<option value="3152">Capitanes, oficiales de cubierta y prácticos</option>
-							<option value="3153">Pilotos de aviación y afines</option>
-							<option value="3154">Controladores de tráfico aéreo y marítimo</option>
-							<option value="3155">Técnicos en seguridad aeronáutica</option>
-							<option value="3211">Técnicos en aparatos de diagnóstico y tratamiento médico</option>
-							<option value="3212">Técnicos de laboratorios médicos</option>
-							<option value="3213">Técnicos y asistentes farmacéuticos</option>
-							<option value="3214">Técnicos de prótesis médicas y dentales</option>
-							<option value="3221">Técnicos y profesionales del nivel medio en enfermería</option>
-							<option value="3222">Técnicos y profesionales del nivel medio en partería</option>
-							<option value="3230">Técnicos y profesionales del nivel medio en medicina tradicional y
-								alternativa</option>
-							<option value="3240">Técnicos y asistentes veterinarios</option>
-							<option value="3251">Higienistas y asistentes odontológicos</option>
-							<option value="3252">Técnicos en documentación sanitaria</option>
-							<option value="3253">Trabajadores comunitarios de la salud</option>
-							<option value="3254">Técnicos en optometría y ópticas</option>
-							<option value="3255">Técnicos y asistentes terapeutas</option>
-							<option value="3256">Asistentes médicos</option>
-							<option value="3257">Inspectores de seguridad, salud ocupacional, medioambiental y afines
-							</option>
-							<option value="3258">Técnicos en atención prehospitalaria</option>
-							<option value="3259">Otros técnicos y profesionales del nivel medio de la salud, no
-								clasificados en otros grupos primarios</option>
-							<option value="3311">Agentes de bolsa, cambio y otros servicios financieros</option>
-							<option value="3312">Analistas de préstamos y créditos</option>
-							<option value="3313">Técnicos de contabilidad y afines</option>
-							<option value="3314">Técnicos y profesionales del nivel medio de servicios estadísticos,
-								matemáticos y afines</option>
-							<option value="3315">Tasadores y evaluadores</option>
-							<option value="3321">Agentes de seguros</option>
-							<option value="3322">Representantes comerciales</option>
-							<option value="3323">Agentes de compras</option>
-							<option value="3324">Agentes de operaciones comerciales y consignatarios</option>
-							<option value="3331">Declarantes o gestores de aduana</option>
-							<option value="3332">Organizadores de conferencias y eventos</option>
-							<option value="3333">Agentes de empleo y contratistas de mano de obra</option>
-							<option value="3334">Agentes inmobiliarios</option>
-							<option value="3339">Agentes de servicios comerciales no clasificados en otros grupos
-								primarios</option>
-							<option value="3341">Supervisores de oficina</option>
-							<option value="3342">Secretarios jurídicos</option>
-							<option value="3343">Secretarios administrativos y ejecutivos</option>
-							<option value="3344">Secretarios médicos</option>
-							<option value="3351">Agentes de aduana e inspectores de frontera</option>
-							<option value="3352">Agentes de administración tributaria</option>
-							<option value="3353">Agentes de servicios de seguridad social</option>
-							<option value="3354">Agentes gubernamentales de expedición de licencias</option>
-							<option value="3355">Inspectores de policía y detectives</option>
-							<option value="3359">Agentes de gobierno y profesionales del nivel medio para la aplicación
-								de regulaciones no clasificados en otros grupos primarios</option>
-							<option value="3411">Técnicos y profesionales del nivel medio del derecho de servicios
-								legales y afines</option>
-							<option value="3412">Trabajadores y asistentes sociales</option>
-							<option value="3413">Auxiliares laicos de las religiones</option>
-							<option value="3421">Atletas y deportistas</option>
-							<option value="3422">Entrenadores, instructores y árbitros de actividades deportivas
-							</option>
-							<option value="3423">Instructores de educación física y actividades recreativas</option>
-							<option value="3431">Fotógrafos</option>
-							<option value="3432">Diseñadores y decoradores de interiores</option>
-							<option value="3433">Técnicos en galerías de arte, museos y bibliotecas</option>
-							<option value="3434">Chefs</option>
-							<option value="3435">Otros técnicos y profesionales del nivel medio en actividades
-								culturales y artísticas</option>
-							<option value="3511">Técnicos en operaciones de tecnología de la información y las
-								comunicaciones</option>
-							<option value="3512">Técnicos en asistencia y soporte al usuario de tecnología de la
-								información y las comunicaciones</option>
-							<option value="3513">Técnicos en redes y sistemas de computación</option>
-							<option value="3514">Técnicos de la Web</option>
-
-							<option value="3521">Técnicos de radiodifusión y grabación audiovisual</option>
-							<option value="3522">Técnicos de ingeniería de las telecomunicaciones</option>
-							<option value="4110">Oficinistas generales</option>
-							<option value="4120">Secretarios generales</option>
-							<option value="4131">Operadores de máquinas de procesamiento de texto y mecanógrafos
-							</option>
-							<option value="4132">Grabadores de datos</option>
-							<option value="4211">Cajeros de bancos y afines</option>
-							<option value="4212">Receptores de apuestas y afines</option>
-							<option value="4213">Prestamistas</option>
-							<option value="4214">Cobradores y afines</option>
-							<option value="4221">Empleados y consultores de viajes</option>
-							<option value="4222">Empleados de centros de llamadas</option>
-							<option value="4223">Telefonistas</option>
-							<option value="4224">Recepcionistas de hoteles</option>
-							<option value="4225">Empleados de ventanillas de informaciones</option>
-							<option value="4226">Recepcionistas generales</option>
-							<option value="4227">Entrevistadores de encuestas y de investigaciones de mercados</option>
-							<option value="4229">Otros empleados de servicios de información al cliente no clasificados
-								en otros grupos primarios</option>
-							<option value="4311">Auxiliares de contabilidad y cálculo de costos</option>
-							<option value="4312">Auxiliares de servicios estadísticos, financieros y de seguros</option>
-							<option value="4313">Auxiliares encargados de las nóminas</option>
-							<option value="4321">Empleados de control de abastecimientos e inventario</option>
-							<option value="4322">Empleados de servicios de apoyo a la producción</option>
-							<option value="4323">Empleados de servicios de transporte</option>
-							<option value="4411">Empleados de bibliotecas</option>
-							<option value="4412">Empleados de servicios de correos</option>
-							<option value="4413">Codificadores de datos, correctores de pruebas de imprenta y afines
-							</option>
-							<option value="4414">Escribientes públicos y afines</option>
-							<option value="4415">Empleados de archivos</option>
-							<option value="4416">Empleados del servicio de personal</option>
-							<option value="4419">Otro personal de apoyo administrativo no clasificados en otros grupos
-								primarios</option>
-							<option value="5111">Personal de servicio a pasajeros</option>
-							<option value="5112">Revisores y cobradores de los transportes públicos</option>
-							<option value="5113">Guías</option>
-							<option value="5120">Cocineros</option>
-							<option value="5131">Meseros</option>
-							<option value="5132">Bármanes</option>
-							<option value="5141">Peluqueros</option>
-							<option value="5142">Especialistas en tratamientos de belleza y afines</option>
-							<option value="5151">Supervisores de mantenimiento y limpieza en oficinas, hoteles y otros
-								establecimientos</option>
-							<option value="5152">Mayordomos domésticos</option>
-							<option value="5153">Conserjes y afines</option>
-							<option value="5161">Astrólogos, adivinos y trabajadores afines</option>
-							<option value="5162">Acompañantes</option>
-							<option value="5163">Personal de servicios funerarios y embalsamadores</option>
-							<option value="5164">Cuidadores de animales</option>
-							<option value="5165">Instructores de conducción</option>
-							<option value="5169">Otros trabajadores de servicios personales no clasificados en otros
-								grupos primarios</option>
-							<option value="5211">Vendedores de quioscos y de puestos de mercado</option>
-							<option value="5212">Vendedores ambulantes de alimentos preparados para consumo inmediato
-							</option>
-							<option value="5221">Comerciantes de tiendas</option>
-							<option value="5222">Supervisores de tiendas y almacenes</option>
-							<option value="5223">Vendedores y auxiliares de venta en tiendas, almacenes y afines
-							</option>
-							<option value="5230">Cajeros de comercio, taquilleros y expendedores de boletas</option>
-							<option value="5241">Modelos de moda, arte y publicidad</option>
-							<option value="5242">Demostradores de tiendas, almacenes y afines</option>
-							<option value="5243">Vendedores puerta a puerta</option>
-							<option value="5244">Vendedores a través de medios tecnológicos</option>
-							<option value="5245">Expendedores de combustibles para vehículos</option>
-							<option value="5246">Vendedores de comidas al mostrador</option>
-							<option value="5249">Otros vendedores no clasificados en otros grupos primarios</option>
-							<option value="5311">Cuidadores de niños</option>
-							<option value="5312">Auxiliares de maestros</option>
-							<option value="5321">Trabajadores de los cuidados personales en instituciones</option>
-							<option value="5322">Trabajadores de los cuidados personales a domicilio</option>
-							<option value="5329">Trabajadores de los cuidados personales en servicios de salud no
-								clasificados en otros grupos primarios</option>
-							<option value="5411">Bomberos y rescatistas</option>
-							<option value="5412">Policías</option>
-							<option value="5413">Guardianes de prisión</option>
-							<option value="5414">Guardias de seguridad</option>
-							<option value="5419">Personal de los servicios de protección no clasificados en otros grupos
-								primarios</option>
-							<option value="6111">Agricultores y trabajadores calificados de cultivos extensivos</option>
-							<option value="6112">Agricultores y trabajadores calificados de plantaciones de árboles y
-								arbustos</option>
-							<option value="6113">Agricultores y trabajadores calificados de huertas, invernaderos,
-								viveros y jardines</option>
-							<option value="6114">Agricultores y trabajadores calificados de cultivos mixtos</option>
-							<option value="6121">Criadores de ganado y trabajadores de la cría de animales domésticos
-								(excepto aves de corral)</option>
-							<option value="6122">Avicultores y trabajadores calificados de la avicultura</option>
-							<option value="6123">Criadores y trabajadores calificados</option>
-
-							<option value="3521">Técnicos de radiodifusión y grabación audiovisual</option>
-							<option value="3522">Técnicos de ingeniería de las telecomunicaciones</option>
-							<option value="4110">Oficinistas generales</option>
-							<option value="4120">Secretarios generales</option>
-							<option value="4131">Operadores de máquinas de procesamiento de texto y mecanógrafos
-							</option>
-							<option value="4132">Grabadores de datos</option>
-							<option value="4211">Cajeros de bancos y afines</option>
-							<option value="4212">Receptores de apuestas y afines</option>
-							<option value="4213">Prestamistas</option>
-							<option value="4214">Cobradores y afines</option>
-							<option value="4221">Empleados y consultores de viajes</option>
-							<option value="4222">Empleados de centros de llamadas</option>
-							<option value="4223">Telefonistas</option>
-							<option value="4224">Recepcionistas de hoteles</option>
-							<option value="4225">Empleados de ventanillas de informaciones</option>
-							<option value="4226">Recepcionistas generales</option>
-							<option value="4227">Entrevistadores de encuestas y de investigaciones de mercados</option>
-							<option value="4229">Otros empleados de servicios de información al cliente no clasificados
-								en otros grupos primarios</option>
-							<option value="4311">Auxiliares de contabilidad y cálculo de costos</option>
-							<option value="4312">Auxiliares de servicios estadísticos, financieros y de seguros</option>
-							<option value="4313">Auxiliares encargados de las nóminas</option>
-							<option value="4321">Empleados de control de abastecimientos e inventario</option>
-							<option value="4322">Empleados de servicios de apoyo a la producción</option>
-							<option value="4323">Empleados de servicios de transporte</option>
-							<option value="4411">Empleados de bibliotecas</option>
-							<option value="4412">Empleados de servicios de correos</option>
-							<option value="4413">Codificadores de datos, correctores de pruebas de imprenta y afines
-							</option>
-							<option value="4414">Escribientes públicos y afines</option>
-							<option value="4415">Empleados de archivos</option>
-							<option value="4416">Empleados del servicio de personal</option>
-							<option value="4419">Otro personal de apoyo administrativo no clasificados en otros grupos
-								primarios</option>
-							<option value="5111">Personal de servicio a pasajeros</option>
-							<option value="5112">Revisores y cobradores de los transportes públicos</option>
-							<option value="5113">Guías</option>
-							<option value="5120">Cocineros</option>
-							<option value="5131">Meseros</option>
-							<option value="5132">Bármanes</option>
-							<option value="5141">Peluqueros</option>
-							<option value="5142">Especialistas en tratamientos de belleza y afines</option>
-							<option value="5151">Supervisores de mantenimiento y limpieza en oficinas, hoteles y otros
-								establecimientos</option>
-							<option value="5152">Mayordomos domésticos</option>
-							<option value="5153">Conserjes y afines</option>
-							<option value="5161">Astrólogos, adivinos y trabajadores afines</option>
-							<option value="5162">Acompañantes</option>
-							<option value="5163">Personal de servicios funerarios y embalsamadores</option>
-							<option value="5164">Cuidadores de animales</option>
-							<option value="5165">Instructores de conducción</option>
-							<option value="5169">Otros trabajadores de servicios personales no clasificados en otros
-								grupos primarios</option>
-							<option value="5211">Vendedores de quioscos y de puestos de mercado</option>
-							<option value="5212">Vendedores ambulantes de alimentos preparados para consumo inmediato
-							</option>
-							<option value="5221">Comerciantes de tiendas</option>
-							<option value="5222">Supervisores de tiendas y almacenes</option>
-							<option value="5223">Vendedores y auxiliares de venta en tiendas, almacenes y afines
-							</option>
-							<option value="5230">Cajeros de comercio, taquilleros y expendedores de boletas</option>
-							<option value="5241">Modelos de moda, arte y publicidad</option>
-							<option value="5242">Demostradores de tiendas, almacenes y afines</option>
-							<option value="5243">Vendedores puerta a puerta</option>
-							<option value="5244">Vendedores a través de medios tecnológicos</option>
-							<option value="5245">Expendedores de combustibles para vehículos</option>
-							<option value="5246">Vendedores de comidas al mostrador</option>
-							<option value="5249">Otros vendedores no clasificados en otros grupos primarios</option>
-							<option value="5311">Cuidadores de niños</option>
-							<option value="5312">Auxiliares de maestros</option>
-							<option value="5321">Trabajadores de los cuidados personales en instituciones</option>
-							<option value="5322">Trabajadores de los cuidados personales a domicilio</option>
-							<option value="5329">Trabajadores de los cuidados personales en servicios de salud no
-								clasificados en otros grupos primarios</option>
-							<option value="5411">Bomberos y rescatistas</option>
-							<option value="5412">Policías</option>
-							<option value="5413">Guardianes de prisión</option>
-							<option value="5414">Guardias de seguridad</option>
-							<option value="5419">Personal de los servicios de protección no clasificados en otros grupos
-								primarios</option>
-							<option value="6111">Agricultores y trabajadores calificados de cultivos extensivos</option>
-							<option value="6112">Agricultores y trabajadores calificados de plantaciones de árboles y
-								arbustos</option>
-							<option value="6113">Agricultores y trabajadores calificados de huertas, invernaderos,
-								viveros y jardines</option>
-							<option value="6114">Agricultores y trabajadores calificados de cultivos mixtos</option>
-							<option value="6121">Criadores de ganado y trabajadores de la cría de animales domésticos
-								(excepto aves de corral)</option>
-							<option value="6122">Avicultores y trabajadores calificados de la avicultura</option>
-							<option value="6123">Criadores y trabajadores calificados de la apicultura y la
-								sericicultura</option>
-
-							<option value="6129">Criadores y trabajadores pecuarios calificados, avicultores y criadores
-								de insectos no clasificados en otros grupos primarios</option>
-
-							<option value="6130">Productores y trabajadores calificados de explotaciones agropecuarias
-								mixtas cuya producción se destina al mercado</option>
-							<option value="6210">Trabajadores forestales calificados y afines</option>
-							<option value="6221">Trabajadores de explotaciones de acuicultura</option>
-							<option value="6222">Pescadores de agua dulce y en aguas costeras</option>
-							<option value="6223">Pescadores de alta mar</option>
-							<option value="6224">Cazadores y tramperos</option>
-							<option value="6310">Trabajadores agrícolas de subsistencia</option>
-							<option value="6320">Trabajadores pecuarios de subsistencia</option>
-							<option value="6330">Trabajadores agropecuarios de subsistencia</option>
-							<option value="6340">Pescadores, cazadores, tramperos y recolectores de subsistencia
-							</option>
-							<option value="7111">Constructores de casas</option>
-							<option value="7112">Albañiles</option>
-							<option value="7113">Labrantes, tronzadores y grabadores de piedra</option>
-							<option value="7114">Operarios en cemento armado, enfoscadores y afines</option>
-							<option value="7115">Carpinteros de armar y de obra blanca</option>
-							<option value="7119">Oficiales y operarios de la construcción de obra gruesa y afines no
-								clasificados en otros grupos primarios</option>
-							<option value="7121">Techadores</option>
-							<option value="7122">Enchapadores, parqueteros y colocadores de suelos</option>
-							<option value="7123">Revocadores</option>
-							<option value="7124">Instaladores de material aislante y de insonorización</option>
-							<option value="7125">Cristaleros</option>
-							<option value="7126">Fontaneros e instaladores de tuberías</option>
-
-							<option value="7127">Mecánicos montadores de aire acondicionado y refrigeración</option>
-							<option value="7131">Pintores y empapeladores</option>
-							<option value="7132">Barnizadores y afines</option>
-							<option value="7133">Limpiadores de fachadas y deshollinadores</option>
-							<option value="7211">Moldeadores y macheros</option>
-							<option value="7212">Soldadores y oxicortadores</option>
-							<option value="7213">Chapistas y caldereros</option>
-							<option value="7214">Montadores de estructuras metálicas</option>
-							<option value="7215">Aparejadores y empalmadores de cables</option>
-							<option value="7221">Herreros y forjadores</option>
-							<option value="7222">Herramentistas y afines</option>
-							<option value="7223">Ajustadores y operadores de máquinas herramientas</option>
-							<option value="7224">Pulidores de metales y afiladores de herramientas</option>
-							<option value="7231">Mecánicos y reparadores de vehículos de motor</option>
-							<option value="7232">Mecánicos y reparadores de sistemas y motores de aeronaves</option>
-							<option value="7233">Mecánicos y reparadores de máquinas agrícolas e industriales</option>
-							<option value="7234">Reparadores de bicicletas y afines</option>
-							<option value="7311">Mecánicos y reparadores de instrumentos de precisión</option>
-							<option value="7312">Fabricantes y afinadores de instrumentos musicales</option>
-							<option value="7314">Alfareros y ceramistas (barro y arcilla)</option>
-							<option value="7315">Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio
-							</option>
-							<option value="7316">Rotulistas, pintores decorativos y grabadores</option>
-							<option value="7321">Preimpresores y afines</option>
-							<option value="7322">Impresores</option>
-							<option value="7323">Encuadernadores y afines</option>
-							<option value="7331">Tejedores con telares</option>
-							<option value="7332">Tejedores con agujas</option>
-							<option value="7333">Otros tejedores</option>
-							<option value="7341">Cesteros y mimbreros</option>
-							<option value="7342">Sombrereros artesanales</option>
-							<option value="7351">Talladores piezas artesanales de madera</option>
-							<option value="7352">Decoradores de piezas artesanales en madera</option>
-							<option value="7361">Joyeros</option>
-							<option value="7362">Orfebres y plateros</option>
-							<option value="7363">Bisuteros</option>
-							<option value="7370">Artesanos del cuero</option>
-							<option value="7391">Artesanos de papel</option>
-							<option value="7392">Artesanos del hierro y otros metales</option>
-							<option value="7393">Artesanos de las semillas y cortezas vegetales</option>
-							<option value="7399">Artesanos de otros materiales no clasificados en otros grupos primarios
-							</option>
-							<option value="7411">Electricistas de obras y afines</option>
-							<option value="7412">Mecánicos y ajustadores electricistas</option>
-							<option value="7413">Instaladores y reparadores de líneas eléctricas</option>
-							<option value="7421">Mecánicos y reparadores en electrónica</option>
-							<option value="7422">Instaladores y reparadores en tecnología de la información y las
-								comunicaciones</option>
-							<option value="7511">Carniceros, pescaderos y afines</option>
-							<option value="7512">Panaderos, pasteleros y confiteros</option>
-							<option value="7513">Operarios de la elaboración de productos lácteos</option>
-							<option value="7514">Operarios de la conservación de frutas, legumbres, verduras y afines
-							</option>
-							<option value="7515">Catadores y clasificadores de alimentos y bebidas</option>
-							<option value="7516">Preparadores y elaboradores de tabaco y sus productos</option>
-							<option value="7521">Operarios del tratamiento de la madera</option>
-							<option value="7522">Ebanistas y carpinteros (excluye carpinteros de armar y de obra blanca)
-							</option>
-							<option value="7523">Ajustadores y operadores de máquinas para trabajar madera</option>
-							<option value="7531">Sastres, modistos, peleteros y sombrereros</option>
-							<option value="7532">Patronistas y cortadores de tela, cuero y afines</option>
-							<option value="7533">Costureros, bordadores y afines</option>
-							<option value="7534">Tapiceros, colchoneros y afines</option>
-							<option value="7535">Apelambradores, pellejeros y curtidores</option>
-							<option value="7536">Zapateros y afines</option>
-							<option value="7541">Buzos</option>
-							<option value="7542">Dinamiteros y pegadores</option>
-							<option value="7543">Clasificadores y probadores de productos (excluyendo alimentos y
-								bebidas)</option>
-							<option value="7544">Fumigadores y otros controladores de plagas y malas hierbas</option>
-							<option value="7549">Otros oficiales, operarios y oficios relacionados no clasificados en
-								otros grupos primarios</option>
-							<option value="8111">Mineros y operadores de instalaciones mineras</option>
-							<option value="8112">Operadores de instalaciones de procesamiento de minerales y rocas
-							</option>
-							<option value="8113">Perforadores y sondistas de pozos y afines</option>
-							<option value="8114">Operadores de máquinas para fabricar cemento y otros productos
-								minerales</option>
-							<option value="8121">Operadores de instalaciones de procesamiento de metales</option>
-							<option value="8122">Operadores de máquinas pulidoras, galvanizadoras y recubridoras de
-								metales</option>
-							<option value="8131">Operadores de plantas y máquinas de productos químicos</option>
-							<option value="8132">Operadores de máquinas para fabricar productos fotográficos</option>
-							<option value="8141">Operadores de máquinas para fabricar productos de caucho</option>
-							<option value="8142">Operadores de máquinas para fabricar productos de material plástico
-							</option>
-							<option value="8143">Operadores de máquinas para fabricar productos de papel</option>
-							<option value="8151">Operadores de máquinas de preparación de fibras, hilado y devanado
-							</option>
-							<option value="8152">Operadores de telares y otras máquinas tejedoras</option>
-							<option value="8153">Operadores de máquinas de coser</option>
-							<option value="8154">Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos
-							</option>
-							<option value="8155">Operadores de máquinas de tratamiento de pieles y cueros</option>
-							<option value="8156">Operadores de máquinas para la fabricación de calzado y afines</option>
-							<option value="8157">Operadores de máquinas de lavandería</option>
-							<option value="8159">Operadores de máquinas para fabricar productos textiles y artículos de
-								piel y cuero no clasificados en otros grupos primarios</option>
-							<option value="8160">Operadores de máquinas para elaborar alimentos y productos afines
-							</option>
-							<option value="8171">Operadores de instalaciones para la preparación de pasta para papel y
-								papel</option>
-							<option value="8172">Operadores de instalaciones de procesamiento de la madera</option>
-							<option value="8181">Operadores de máquinas y de instalaciones para elaborar productos de
-								vidrio y cerámica</option>
-							<option value="8182">Operadores de máquinas de vapor y calderas</option>
-							<option value="8183">Operadores de máquinas de embalaje, embotellamiento y etiquetado
-							</option>
-							<option value="8189">Otros operadores de máquinas y de instalaciones fijas no clasificados
-								en otros grupos primarios</option>
-							<option value="8211">Ensambladores de maquinaria mecánica</option>
-							<option value="8212">Ensambladores de equipos eléctricos y electrónicos</option>
-							<option value="8219">Ensambladores no clasificados bajo otros grupos primarios</option>
-							<option value="8311">Maquinistas de locomotoras</option>
-							<option value="8312">Guardafrenos, guardagujas y agentes de maniobras</option>
-							<option value="8321">Conductores de motocicletas</option>
-							<option value="8323">Conductores de camionetas y vehículos livianos</option>
-							<option value="8324">Conductores de taxis</option>
-							<option value="8331">Conductores de buses, microbuses y tranvías</option>
-							<option value="8332">Conductores de camiones y vehículos pesados</option>
-							<option value="8341">Operadores de maquinaria agrícola y forestal móvil</option>
-							<option value="8342">Operadores de máquinas de movimiento de tierras, construcción de vías y
-								afines</option>
-							<option value="8343">Operadores de grúas, aparatos elevadores y afines</option>
-							<option value="8344">Operadores de montacargas</option>
-							<option value="8350">Marineros de cubierta y afines</option>
-							<option value="9111">Personal doméstico</option>
-							<option value="9112">Aseadores de oficinas, hoteles y otros establecimientos</option>
-							<option value="9121">Lavanderos y planchadores manuales</option>
-							<option value="9122">Lavadores de vehículos</option>
-							<option value="9123">Lavadores de ventanas</option>
-							<option value="9129">Otro personal de limpieza no clasificados bajo otros grupos primarios
-							</option>
-							<option value="9211">Obreros y peones de explotaciones agrícolas</option>
-							<option value="9212">Obreros y peones de explotaciones ganaderas</option>
-							<option value="9213">Obreros y peones de explotaciones agropecuarias</option>
-							<option value="9214">Obreros y peones de jardinería y horticultura</option>
-							<option value="9215">Obreros y peones forestales</option>
-							<option value="9216">Obreros y peones de pesca y acuicultura</option>
-							<option value="9311">Obreros y peones de minas y canteras</option>
-							<option value="9312">Obreros y peones de obras públicas y mantenimiento</option>
-							<option value="9313">Obreros y peones de la construcción de edificios</option>
-							<option value="9321">Empacadores manuales</option>
-							<option value="9329">Obreros y peones de la industria manufacturera no clasificados en otros
-								grupos primarios</option>
-							<option value="9331">Conductores de vehículos accionados a pedal o a brazo</option>
-							<option value="9332">Conductores de vehículos y máquinas de tracción animal</option>
-							<option value="9333">Obreros y peones de carga</option>
-							<option value="9334">Surtidores de estanterías</option>
-							<option value="9411">Cocineros de comidas rápidas</option>
-							<option value="9412">Ayudantes de cocina</option>
-							<option value="9510">Trabajadores ambulantes de servicios y afines</option>
-							<option value="9520">Vendedores ambulantes (excluyendo comidas de preparación inmediata)
-							</option>
-							<option value="9611">Recolectores de basura y material reciclable</option>
-							<option value="9612">Clasificadores de desechos</option>
-							<option value="9613">Barrenderos y afines</option>
-							<option value="9621">Mensajeros, mandaderos, maleteros y repartidores</option>
-							<option value="9622">Personas que realizan trabajos varios</option>
-							<option value="9624">Acarreadores de agua y recolectores de leña</option>
-							<option value="9625">Recolectores de dinero y surtidores de máquinas de venta automática
-							</option>
-							<option value="9626">Lectores de medidores</option>
-							<option value="9629">Otras ocupaciones elementales no clasificadas en otros grupos primarios
-							</option>
-							<option value="9998">Jubilado, desempleado, ama de casa, estudiante, dedicación al hogar,
-								menor de edad</option>
-							<option value="9999">En los casos en que no se tiene esta información registrar</option>
-
-
-
-
-
-
-						</select>
-
-
-						<label for="nivel_educativo" class="cuestionario4">Nivel educativo</label>
-						<select type="text" name="nivel_educativo" id="nivel_educativo">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Preescolar">1. Preescolar</option>
-							<option value="Básica Primaria">2. Básica Primaria</option>
-							<option value="Básica Secundaria">3. Básica Secundaria</option>
-							<option value="Media Académica o Clásica">4. Media Académica o Clásica</option>
-							<option value="Media Técnica (Bachillerato Técnico)">5. Media Técnica (Bachillerato Técnico)
-							</option>
-							<option value="Normalista">6. Normalista</option>
-							<option value="Técnica profesional">7. Técnica profesional</option>
-							<option value="Tecnológica">8. Tecnológica</option>
-							<option value="Profesional">9. Profesional</option>
-							<option value="Especialización">10. Especialización</option>
-							<option value="Maestría">11. Maestría</option>
-							<option value="Doctorado">12. Doctorado</option>
-							<option value="Ninguno">13. Ninguno</option>
-
-						</select>
-
-
-
-						<label for="regimen_de_salud" class="cuestionario4">Regimen de salud</label>
-						<select type="text" name="regimen_de_salud" id="regimen_de_salud">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Subsidiado">1. Subsidiado</option>
-							<option value="Contributivo">2. Contributivo</option>
-							<option value="Especial">3. Especial</option>
-							<option value="Excepción">4. Excepción</option>
-							<option value="No afiliado">5. No afiliado</option>
-
-
-						</select>
-
-
-						<label for="eapb" class="cuestionario4">EAPB</label>
-
-						<select type="text" name="eapb" id="eapb">
-							
-							<option value="none">Seleccione Una</option>
-							<option value="CCF033-CAJA DE COMPENSACIÓN FAMILIAR DE SUCRE">CCF033-CAJA DE COMPENSACIÓN
-								FAMILIAR DE SUCRE</option>
-							<option
-								value="CCF050-CAJA DE COMPENSACIÓN FAMILIAR C.C.F. DEL ORIENTE COLOMBIANO COMFAORIENTE">
-								CCF050-CAJA DE COMPENSACIÓN FAMILIAR C.C.F. DEL ORIENTE COLOMBIANO "COMFAORIENTE"
-							</option>
-							<option value="CCF055-CAJA DE DE COMPENSACION FAMILIAR  CAJACOPI ATLANTICO">CCF055-CAJA DE
-								DE COMPENSACION FAMILIAR CAJACOPI ATLANTICO</option>
-							<option value="CCF102-CAJA DE COMPENSACIÓN FAMILIAR DEL CHOCÓ COMFACHOCO">CCF102-CAJA DE
-								COMPENSACIÓN FAMILIAR DEL CHOCÓ COMFACHOCO</option>
-							<option value="CCFC20-CAJA DE COMPENSACIÓN FAMILIAR DEL CHOCÓ COMFACHOCO-CM">CCFC20-CAJA DE
-								COMPENSACIÓN FAMILIAR DEL CHOCÓ COMFACHOCO-CM</option>
-							<option value="CCFC33-CAJA DE COMPENSACIÓN FAMILIAR DE SUCRE-CM">CCFC33-CAJA DE COMPENSACIÓN
-								FAMILIAR DE SUCRE-CM</option>
-							<option
-								value="CCFC50-CAJA DE COMPENSACIÓN FAMILIAR C.C.F. DEL ORIENTE COLOMBIANO - COMFAORIENTE -CM">
-								CCFC50-CAJA DE COMPENSACIÓN FAMILIAR C.C.F. DEL ORIENTE COLOMBIANO - COMFAORIENTE -CM
-							</option>
-							<option value="CCFC55-CAJA DE DE COMPENSACION FAMILIAR  CAJACOPI ATLANTICO-CM">CCFC55-CAJA
-								DE DE COMPENSACION FAMILIAR CAJACOPI ATLANTICO-CM</option>
-							<option value="EAS016-EMPRESAS PUBLICAS DE MEDELLIN-DEPARTAMENTO MEDICO">EAS016-EMPRESAS
-								PUBLICAS DE MEDELLIN-DEPARTAMENTO MEDICO</option>
-							<option value="EAS027-FONDO DE PASIVO SOCIAL DE LOS FERROCARRILES NALES">EAS027-FONDO DE
-								PASIVO SOCIAL DE LOS FERROCARRILES NALES</option>
-							<option value="EPS001-ALIANSALUD ENTIDAD PROMOTORA DE SALUD S.A.">EPS001-ALIANSALUD ENTIDAD
-								PROMOTORA DE SALUD S.A.</option>
-							<option value="EPS002-SALUD  TOTAL  S.A.  E.P.S.">EPS002-SALUD TOTAL S.A. E.P.S.</option>
-							<option value="EPS005-E.P.S.  SANITAS  S.A.">EPS005-E.P.S. SANITAS S.A.</option>
-							<option value="EPS008-COMPENSAR   E.P.S.">EPS008-COMPENSAR E.P.S.</option>
-							<option value="EPS010-EPS Y MEDICINA PREPAGADA SURAMERICANA S.A">EPS010-EPS Y MEDICINA
-								PREPAGADA SURAMERICANA S.A</option>
-							<option value="EPS012-COMFENALCO  VALLE  E.P.S.">EPS012-COMFENALCO VALLE E.P.S.</option>
-							<option value="EPS017-E.P.S.  FAMISANAR  LTDA.">EPS017-E.P.S. FAMISANAR LTDA.</option>
-							<option value="EPS018-EPS SERVICIO OCCIDENTAL DE SALUD  S.A. - EPS S.O.S. S.A.">EPS018-EPS
-								SERVICIO OCCIDENTAL DE SALUD S.A. - EPS S.O.S. S.A.</option>
-							<option value="EPS025-CAPRESOCA  EPS">EPS025-CAPRESOCA EPS</option>
-							<option value="EPS037-LA NUEVA EPS S.A.">EPS037-LA NUEVA EPS S.A.</option>
-							<option value="EPS040-SAVIA SALUD EPS -CM">EPS040-SAVIA SALUD EPS -CM</option>
-							<option value="EPS041-LA NUEVA EPS S.A.-CM">EPS041-LA NUEVA EPS S.A.-CM</option>
-							<option
-								value="EPS042-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA - COOSALUD">
-								EPS042-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA -
-								COOSALUD</option>
-							<option value="EPS046-FUNDACIÓN SALUD MIA EPS">EPS046-FUNDACIÓN SALUD MIA EPS</option>
-							<option value="EPS047-SALUD BOLIVAR EPS SAS">EPS047-SALUD BOLIVAR EPS SAS</option>
-							<option
-								value="EPS048-ASOCIACION MUTUAL SER EMPRESA SOLIDARIA DE SALUD EPS-S MUTUAL SER EPS-S">
-								EPS048-ASOCIACION MUTUAL SER EMPRESA SOLIDARIA DE SALUD EPS-S MUTUAL SER EPS-S</option>
-							<option value="EPSC25-CAPRESOCA  EPS-CM">EPSC25-CAPRESOCA EPS-CM</option>
-							<option value="EPSC34-CAPITAL SALUD-CM">EPSC34-CAPITAL SALUD-CM</option>
-							<option value="EPSI01-ASOCIACIÓN INDÍGENA DEL CESAR Y LA GUAJIRA DUSAKAWI">EPSI01-ASOCIACIÓN
-								INDÍGENA DEL CESAR Y LA GUAJIRA DUSAKAWI</option>
-							<option value="EPSI03-ASOCIACIÓN INDÍGENA DEL CAUCA">EPSI03-ASOCIACIÓN INDÍGENA DEL CAUCA
-							</option>
-							<option value="EPSI04-ANASWAYUU">EPSI04-ANASWAYUU</option>
-							<option value="EPSI05-MALLAMAS">EPSI05-MALLAMAS</option>
-							<option value="EPSI06-PIJAOS SALUD EPSI">EPSI06-PIJAOS SALUD EPSI</option>
-							<option value="EPSIC1-ASOCIACIÓN INDÍGENA DEL CESAR Y LA GUAJIRA DUSAKAWI-CM">
-								EPSIC1-ASOCIACIÓN INDÍGENA DEL CESAR Y LA GUAJIRA DUSAKAWI-CM</option>
-							<option value="EPSIC3-ASOCIACIÓN INDÍGENA DEL CAUCA - AIC -CM">EPSIC3-ASOCIACIÓN INDÍGENA
-								DEL CAUCA - AIC -CM</option>
-							<option value="EPSIC4-ANASWAYUU-CM">EPSIC4-ANASWAYUU-CM</option>
-							<option value="EPSIC5-MALLAMAS-CM">EPSIC5-MALLAMAS-CM</option>
-							<option value="EPSIC6-PIJAOS SALUD EPSI-CM">EPSIC6-PIJAOS SALUD EPSI-CM</option>
-							<option value="EPSS01-ALIANSALUD ENTIDAD PROMOTORA DE SALUD S.A.-CM">EPSS01-ALIANSALUD
-								ENTIDAD PROMOTORA DE SALUD S.A.-CM</option>
-							<option value="EPSS02-SALUD  TOTAL  S.A.  E.P.S. CM">EPSS02-SALUD TOTAL S.A. E.P.S. CM
-							</option>
-							<option value="EPSS05-E.P.S.  SANITAS  S.A.-CM">EPSS05-E.P.S. SANITAS S.A.-CM</option>
-							<option value="EPSS08-COMPENSAR   E.P.S.-CM">EPSS08-COMPENSAR E.P.S.-CM</option>
-							<option value="EPSS10-EPS Y MEDICINA PREPAGADA SURAMERICANA S.A-CM">EPSS10-EPS Y MEDICINA
-								PREPAGADA SURAMERICANA S.A-CM</option>
-							<option value="EPSS12-COMFENALCO  VALLE  E.P.S.-CM">EPSS12-COMFENALCO VALLE E.P.S.-CM
-							</option>
-							<option value="EPSS17-E.P.S.  FAMISANAR  LTDA.-CM">EPSS17-E.P.S. FAMISANAR LTDA.-CM</option>
-							<option value="EPSS18-EPS SERVICIO OCCIDENTAL DE SALUD  S.A. - EPS S.O.S. S.A.-CM">
-								EPSS18-EPS SERVICIO OCCIDENTAL DE SALUD S.A. - EPS S.O.S. S.A.-CM</option>
-							<option value="EPSS34-CAPITAL SALUD">EPSS34-CAPITAL SALUD</option>
-							<option value="EPSS37-NUEVA EPS S.A. -CM">EPSS37-NUEVA EPS S.A. -CM</option>
-							<option value="EPSS40-SAVIA SALUD EPS">EPSS40-SAVIA SALUD EPS</option>
-							<option value="EPSS41-LA NUEVA EPS S.A.">EPSS41-LA NUEVA EPS S.A.</option>
-							<option
-								value="EPSS42-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA - COOSALUD -CM">
-								EPSS42-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA -
-								COOSALUD -CM</option>
-							<option value="EPSS46-FUNDACIÓN SALUD MIA - CM">EPSS46-FUNDACIÓN SALUD MIA - CM</option>
-							<option value="EPSS47-SALUD BOLIVA EPS SAS CM">EPSS47-SALUD BOLIVA EPS SAS CM</option>
-							<option
-								value="EPSS48-ASOCIACION MUTUAL SER EMPRESA SOLIDARIA DE SALUD EPS-S MUTUAL SER EPS-S - CM">
-								EPSS48-ASOCIACION MUTUAL SER EMPRESA SOLIDARIA DE SALUD EPS-S MUTUAL SER EPS-S - CM
-							</option>
-							<option
-								value="ESS024-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA LTDA. COOSALUD E.S.S.">
-								ESS024-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA LTDA.
-								COOSALUD E.S.S.</option>
-							<option value="ESS062-ASOCIACIÓN MUTUAL LA ESPERANZA ASMET  SALUD">ESS062-ASOCIACIÓN MUTUAL
-								LA ESPERANZA ASMET SALUD</option>
-							<option
-								value="ESS118-ASOCIACIÓN MUTUAL EMPRESA SOLIDARIA DE SALUD DE NARIÑO E.S.S. EMSSANAR E.S.S.">
-								ESS118-ASOCIACIÓN MUTUAL EMPRESA SOLIDARIA DE SALUD DE NARIÑO E.S.S. EMSSANAR E.S.S.
-							</option>
-							<option value="ESS207-ASOCIACIÓN MUTUAL SER EMPRESA SOLIDARIA DE SALUD ESS">
-								ESS207-ASOCIACIÓN MUTUAL SER EMPRESA SOLIDARIA DE SALUD ESS</option>
-							<option value="ESSC07-ASOCIACIÓN MUTUAL SER EMPRESA SOLIDARIA DE SALUD ESS-CM">
-								ESSC07-ASOCIACIÓN MUTUAL SER EMPRESA SOLIDARIA DE SALUD ESS-CM</option>
-							<option
-								value="ESSC18-ASOCIACIÓN MUTUAL EMPRESA SOLIDARIA DE SALUD DE NARIÑO E.S.S. EMSSANAR E.S.S.-CM">
-								ESSC18-ASOCIACIÓN MUTUAL EMPRESA SOLIDARIA DE SALUD DE NARIÑO E.S.S. EMSSANAR E.S.S.-CM
-							</option>
-							<option
-								value="ESSC24-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA LTDA. COOSALUD E.S.S.-CM">
-								ESSC24-COOPERATIVA DE SALUD Y DESARROLLO INTEGRAL ZONA SUR ORIENTAL DE CARTAGENA LTDA.
-								COOSALUD E.S.S.-CM</option>
-							<option value="ESSC62-ASOCIACIÓN MUTUAL LA ESPERANZA ASMET  SALUD-CM">ESSC62-ASOCIACIÓN
-								MUTUAL LA ESPERANZA ASMET SALUD-CM</option>
-							<option value="INP001-INPEC">INP001-INPEC</option>
-							<option value="RES002-ECOPETROL">RES002-ECOPETROL</option>
-							<option value="RES004-MAGISTERIO">RES004-MAGISTERIO</option>
-							<option value="RES005-UATLANTICO">RES005-UATLANTICO</option>
-							<option value="RES006-CAPRUIS">RES006-CAPRUIS</option>
-							<option value="RES007-UVALLE">RES007-UVALLE</option>
-							<option value="RES008-UNISALUD">RES008-UNISALUD</option>
-							<option value="RES009-UCAUCA">RES009-UCAUCA</option>
-							<option value="RES010-UCARTAGENA">RES010-UCARTAGENA</option>
-							<option value="RES012-UCORDOBA">RES012-UCORDOBA</option>
-							<option value="RES013-UNARIÑO">RES013-UNARIÑO</option>
-							<option value="RES014-UPTC">RES014-UPTC</option>
-
-						</select>
-
-
-						<label for="" class="cuestionario4">Pertenencia a un grupo poblacionanl de especial
-							protección</label>
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_adolescente_o_menores"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Niñas, niños y adolescentes">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_adolescente_o_menores">1.
-								Niñas, niños y adolescentes</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_gestante" class="checkbox"
-								name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion" value="Gestantes">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_gestante">2.
-								Gestantes</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_adulto_mayor"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Adulto Mayor">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_adulto_mayor">3. Adulto
-								Mayor</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_condicion_discapacidad"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Condición de discapacidad">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_condicion_discapacidad">4.
-								Condición de discapacidad</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_orientacion_sexual_diversa"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Orientación sexual diversa">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_orientacion_sexual_diversa">5.
-								Orientación sexual diversa</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_victima_de_violencia"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Victima de violencia">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_victima_de_violencia">6.
-								Victima de violencia</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox"
-								id="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_grupo_etnico"
-								class="checkbox" name="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion"
-								value="Grupo étnico">
-							<label class="label checkbox"
-								for="pertenecia_a_un_grupo_pobalcional_de_especial_proteccion_grupo_etnico">7. Grupo
-								étnico</label>
-						</div>
-
-
-
-
-
-						<label for="pertenencia_etnica" class="cuestionario4">Pertenencia étnica</label>
-						<select type="text" name="pertenencia_etnica" id="pertenencia_etnica">
-							<option value="none" selected disabled>Seleccione Una</option>
-							<option value="Indigena">1. Indigena</option>
-							<option value="ROM">2. ROM(Gitanos)</option>
-							<option value="Raizal">3. Raizal(San Andrés y providencia)</option>
-							<option value="Palenquero de San Basilio">4. Palenquero de San Basilio</option>
-							<option value="Negro o negra">5. Negro(a)</option>
-							<option value="Afrocolombiano">6. Afrocolombiano</option>
-							<option value="Ninguna de las anteriores">7. Ninguna de las anteriores</option>
-
-
-
-
-						</select>
-
-
-						<label for="" class="cuestionario4">¿Reconoce alguna discapacidad?</label>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_fisica" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Fisica">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_fisica">1. Fisica</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_auditiva" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Auditiva">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_auditiva">2.
-								Auditiva</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_visual" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Visual">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_visual">3. Visual</label>
-						</div>
-
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_sordoceguera" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Sordoceguera">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_sordoceguera">4.
-								Sordoceguera</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_intelectual" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Intelectual">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_intelectual">5.
-								Intelectual</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_psicosocial" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Psicosocial">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_psicosocial">6.
-								Psicosocial(mental)</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_multiple" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Múltiple">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_multiple">7.
-								Múltiple</label>
-						</div>
-
-						<div class="group_checkbox">
-							<input type="checkbox" id="reconoce_alguna_discapacidad_sin_discapacidad" class="checkbox"
-								name="reconoce_alguna_discapacidad" value="Sin discapacidad">
-							<label class="label checkbox" for="reconoce_alguna_discapacidad_sin_discapacidad">8. Sin
-								discapacidad</label>
-						</div>
-
-
-
-
-
-
-						<label for="peso_persona" class="cuestionario4">Peso <span class="aclaracion">en kilogramos
-								(Decimales separados por coma)</span></label>
-						<input type="number" class="label cuestionario4" id="peso_persona" name="peso_persona"
-							placeholder="45.5" value="">
-
-
-						<label for="talla_persona" class="cuestionario4">Talla <span class="aclaracion">en
-								centimetros</span></label>
-						<input class="label cuestionario4" id="talla_persona" name="talla_persona" placeholder="170"
-							value="">
-
-
-						<label for="diagnostico_nutricional_imc" class="cuestionario4">Diagnóstico nutricional indicador
-							Peso para la
-							talla</label>
-						<select type="text" name="diagnostico_nutricional_imc" id="diagnostico_nutricional_imc">
-							<option value="none">Seleccione Una</option>
-
-							<option value="Obesidad">1. Obesidad</option>
-							<option value="Sobrepeso">2. Sobrepeso</option>
-							<option value="Riesgo de sobrepeso">3. Riesgo de sobrepeso</option>
-							<option value="Peso Adecuado para la talla">4. Peso Adecuado para la talla</option>
-							<option value="Riesgo de desnutrición aguda">5. Riesgo de desnutrición aguda</option>
-							<option value="Desnutrición aguda moderada">6. Desnutrición aguda moderada</option>
-							<option value="Desnutrición Aguda Severa">7. Desnutrición Aguda Severa</option>
-
-
-
-						</select>
-
-
-
-						<label for="medida_complementaria_identificacion_de_riesgo_de_muerte_por_desnutricion_aguda"
-							class="cuestionario4">Medida complementaria identificación de riesgo de
-							muerte por desnutrición aguda, perímetro braquial</label>
-						<input class=""
-							id="medida_complementaria_identificacion_de_riesgo_de_muerte_por_desnutricion_aguda"
-							name="medida_complementaria_identificacion_de_riesgo_de_muerte_por_desnutricion_aguda"
-							placeholder="" value="">
-
-
-						<label for=""
-							class="cuestionario4">¿El integrante de la familia presenta situaciones o
-							condiciones de la salud?</label>
-
-						<div class="group_radio">
-							<label class="label radio"
-								for="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud_si" >SI</label>
-							<input type="radio"
-								id="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud_si"
-								class="radio"
-								name="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud"
-								value="si">
-							<label class="label radio"
-								for="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud_no">NO</label>
-							<input type="radio"
-								id="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud_no"
-								class="radio"
-								name="integrante_de_la_familia_presenta_situaciones_o_condiciones_de_la_salud"
-								value="no">
-						</div>
-
-
-
-						<button class="btn_eliminar_integrante">Eliminar integrante</button>
-
-
-					</section>
+					<label class = "label cuestionario1" for="seda_dental">18. Seda Dental</label>
+					<div class="group_radio">
+						<label class="label radio" for="seda_dental_si">SI</label>
+						<input type="radio" id="seda_dental_si" class="radio" name="seda_dental" required value="si">
+						<label class="label radio" for="seda_dental_no">NO</label>
+						<input type="radio" id="seda_dental_no" class = "radio" name="seda_dental" required value="no">
+					</div>
 
 
 				</li>
-
-				
 
 			</ul>
-
-
-			<section class="section cuestionario4"><button id="btn_agregar_integrante" class="btn_agregar_integrante">Agregar integrante de la familia</button></section>
-
-
-
-
-
-
-
-			<button id="btn_comprueba_input_vacios" class="btn_comprobar_formulario"></button>
-
-
-			<!-- BOTON DE ENVÍO -->
-			<input disabled id="btn_submit" class="cuestionario1 submit" type="submit" name="enviar" value="">
-
 			
+
+		
+
+			<label class = "label cuestionario1" for="mf_tuvo_problema_dental">19. ¿Algún miembro de la familia ha tenido algún problema dental en la boca en el último mes</label>
+			<div class="group_radio">
+				<label class="label radio" for="mf_tuvo_problema_dental_si">SI</label>
+				<input type="radio" id="mf_tuvo_problema_dental_si" class="radio" name="mf_tuvo_problema_dental" required value="si">
+				<label class="label radio" for="mf_tuvo_problema_dental_no">NO</label>
+				<input type="radio" id="mf_tuvo_problema_dental_no" class = "radio" name="mf_tuvo_problema_dental" required value="no">
+			</div>
+
+
+			<label class = "label cuestionario1" for="mf_tuvo_problema_dental">20. Si Algún miembro de la familia ha tenido algún problema dental o en la boca en los últimos 30 días ¿a quién acudió?</label>
+			<input type="text" id="a_quien_acudio" name="a_quien_acudio" class="a_quien_acudio mf_tuvo_problema_dental" disabled>
+
+
+			<label class = "label cuestionario1" for="razon_no_solicito_atencion">21. Razón por la cual no solicitó atención al odontólogo estando enfermo en los últimos 30 días</label>
+			<input type="text" name="razon_no_solicito_atencion" id="razon_no_solicito_atencion" required value="" placeholder="No solicité porque ....">
+
+
+
+			<label class = "label cuestionario1" for="necesita_atencion_pri">22.¿Algún miembro de la familia necesita atención odontológica prioritaria (trastornos dolorosos, hemorrágicos, infecciosos y/o trauma dentó alveolar)?</label>
+			<div class="group_radio">
+				<label class="label radio" for="necesita_atencion_pri_si">SI</label>
+				<input type="radio" id="necesita_atencion_pri_si" class="radio" name="necesita_atencion_pri" required value="si">
+				<label class="label radio" for="necesita_atencion_pri_no">NO</label>
+				<input type="radio" id="necesita_atencion_pri_no" class = "radio" name="necesita_atencion_pri" required value="no">
+			</div>
+			
+
+
+			<label class = "label cuestionario1" for="tienen_lavamanos">23. Cuenta con lavamanos o pozeta para su higiene oral</label>
+			<div class="group_radio">
+				<label class="label radio" for="tienen_lavamanos_si">SI</label>
+				<input type="radio" id="tienen_lavamanos_si" class="radio" name="tienen_lavamanos" required value="si">
+				<label class="label radio" for="tienen_lavamanos_no">NO</label>
+				<input type="radio" id="tienen_lavamanos_no" class = "radio" name="tienen_lavamanos" required value="no">
+			</div>
+
+			<label class = "label radio cuestionario1" for="tienen_alcantanrillado">24.Cuentan con alcantarillado y agua potable para realizar la higiene oral</label>
+
+			<div class="group_radio">
+				<label class="label radio" for="tienen_alcantanrillado_si">SI</label>
+				<input type="radio" id="tienen_alcantanrillado_si" class="radio" name="tienen_alcantanrillado" required value="si">
+				<label class="label radio" for="tienen_alcantanrillado_si">NO</label>
+				<input type="radio" id="tienen_alcantanrillado_no" class = "radio" name="tienen_alcantanrillado" required value="no">
+			</div>
+			
+
+
+
+			<label class = "label cuestionario1" for="tipo_aseguramiento">25. Tipo Aseguramiento</label>
+			<select type="text" name="tipo_aseguramiento" id="tipo_aseguramiento" required>
+
+				<option value="none" selected disabled>Seleccione Una</option>
+
+				<option value="Subsidiado">Subsidiado</option>
+				<option value="Contributivo">Contributivo</option>
+				<option value="Regimen Especial">Regimen Especial</option>
+				<option value="No afiliado">No afiliado</option>
+
+			</select>
+
+
+
+
+
+		</section>
+
+
+		<button id="btn_comprueba_input_vacios" class="btn_comprobar_formulario"></button>
+
+		<!-- BOTON DE ENVÍO -->	
+		<input disabled id="btn_submit" class="cuestionario1 submit" type="submit" name="enviar" value="">
+
+
+
+
 
 		</form>
 
 
 
 
-		<footer class="footer">
-
-
-		</footer>
+	<footer class="footer">
+		
+		
+	</footer>
 
 	</main>
 
 
-
-
+	
+	
 	<script type="text/javascript">
 
 
-		document.addEventListener('DOMContentLoaded', function () {
+
+document.addEventListener('DOMContentLoaded', function () {
 			// body...
 
 			console.log('la pagina cargo completamente');
 
 
 			const button_obtener_lat_y_long = document.getElementById('button_obtener');
-			const latitud = document.getElementById('latitud');
-			const longitud = document.getElementById('longitud');
 			const fecha_hoy = document.getElementById('date');
 			const hora = document.getElementById('hora');
-			const btn_agregar_integrante = document.getElementById('btn_agregar_integrante');
 			const btn_comprueba_input_vacios = document.getElementById('btn_comprueba_input_vacios');
 			const btn_enviar = document.getElementById('btn_submit');
-			let seccion_padre_agregar_integrante = document.getElementById('ul_cuestionario4');
-			let li_agregar_integrante = document.getElementById('li_agregar_integrante');
+			const btn_radio_si = document.getElementById('mf_tuvo_problema_dental_si');
+			const btn_radio_no = document.getElementById('mf_tuvo_problema_dental_no');
 
+			
+
+			btn_radio_si.addEventListener("click", () => {
+
+				const input_desabilitado = document.getElementById('a_quien_acudio');
+								
+				input_desabilitado.disabled = !input_desabilitado.disabled;
+			});
+
+			btn_radio_no.addEventListener("click", () => {
+
+				const input_desabilitado = document.getElementById('a_quien_acudio');
+								
+				input_desabilitado.disabled = true;
+			});
 
 		
-			let seccion_a_clonar = li_agregar_integrante;
 
-
-			li_agregar_integrante.remove();
-
+			
 			//FUNCION QUE OBTIENE LA FECHA CREANDO UN OBJETO DATE
 			function obtenerFecha() {
 				const objFecha = new Date();
@@ -3525,8 +635,8 @@
 			btn_comprueba_input_vacios.addEventListener('click', function(event){
 				event.preventDefault();
 
-				// let radios_no_requeridos = document.querySelectorAll('input[type="radio"]');				
-				// convertirRadiosARequeridos(radios_no_requeridos);
+				//let radios_no_requeridos = document.querySelectorAll('input[type="radio"]');				
+				//convertirRadiosARequeridos(radios_no_requeridos);
 
 
 				// let checkbox_no_requeridos = document.querySelectorAll('input[type="checkbox"]');	
@@ -3538,6 +648,7 @@
 				const selects = document.querySelectorAll('select[required]');
 				const inputs = document.querySelectorAll('input[type="text"][required]');
 				const inputs_number = document.querySelectorAll('input[type="number"][required]');
+				const inputs_date = document.querySelectorAll('input[type="date"][required]')
 				const radios = document.querySelectorAll('input[type="radio"][required]');
 				const checkboxes= document.querySelectorAll('input[type="checkbox"][required]');
 
@@ -3548,15 +659,17 @@
 				const inputs_number_Requeridos = contarInputsRequeridos(inputs_number);
 				const radios_Requeridos = contarRadiosRequeridos(radios);
 				const checkbox_Requeridos = contarCheckboxRequeridos(checkboxes);
+				const dates_Requeridos = contarInputsRequeridos(inputs_date);
 
-				const suma_de_campos_requeridos = selects_Requeridos + inputs_Requeridos + inputs_number_Requeridos + radios_Requeridos + checkbox_Requeridos;
+
+				const suma_de_campos_requeridos = selects_Requeridos + inputs_Requeridos + inputs_number_Requeridos + radios_Requeridos + checkbox_Requeridos + dates_Requeridos;
 
 				if(suma_de_campos_requeridos == 0 ){
 					btn_enviar.disabled = false;
 				}
 
 
-				const mensaje = `${selects_Requeridos} preguntas de selección única obligatorias sin responder.\n ${inputs_Requeridos} preguntas de texto obligatorios sin responder.\n ${inputs_number_Requeridos} preguntas de número obligatorios sin responder.\n ${radios_Requeridos} preguntas de SI o NO obligatorias sin responder.\n ${checkbox_Requeridos} preguntas de selección multiple obligatorias sin responder.\n Total: ${suma_de_campos_requeridos} preguntas obligatorias sin responder`;
+				const mensaje = `${dates_Requeridos} preguntas de fecha obligatorias sin responder.\n ${selects_Requeridos} preguntas de selección única obligatorias sin responder.\n ${inputs_Requeridos} preguntas de texto obligatorios sin responder.\n ${inputs_number_Requeridos} preguntas de número obligatorios sin responder.\n ${radios_Requeridos} preguntas de SI o NO obligatorias sin responder.\n ${checkbox_Requeridos} preguntas de selección multiple obligatorias sin responder.\n Total: ${suma_de_campos_requeridos} preguntas obligatorias sin responder`;
 
 
 				alert(mensaje);
@@ -3611,6 +724,7 @@
 
 				let cantidadInputsRequeridos = 0;
 				let cantidadInputsNumberRequeridos = 0;
+				let cantidaInputDateRequeridos = 0;
 
 
 				inputs.forEach(function(input) {
@@ -3637,13 +751,25 @@
 							input.style.border = "1px solid grey"
 
 						}					
+					}	
+					else if(input.type === "date"){
+						if(input.value === ""){
+							cantidaInputDateRequeridos += 1;
+							input.style.border = "1px solid red"
+
+						}else {
+							input.style.border = "1px solid grey"
+
+						}					
 					}		
 				});
 
-				if(cantidadInputsNumberRequeridos < cantidadInputsRequeridos){
+				if(cantidadInputsNumberRequeridos < cantidadInputsRequeridos  && cantidaInputDateRequeridos < cantidadInputsRequeridos){
 					return cantidadInputsRequeridos;
-				}else {
+				}else if (cantidadInputsNumberRequeridos > cantidadInputsRequeridos  && cantidadInputsNumberRequeridos > cantidaInputDateRequeridos){
 					return cantidadInputsNumberRequeridos;
+				}else {
+					return cantidaInputDateRequeridos;
 				}
 
 				
@@ -3785,19 +911,6 @@
 
 
 
-			//BOTON QUE EJECUTARA LA FUNCION AGREGAR SECCION DE INTEGRANTE AL HACER CLICK EN EL
-
-
-			btn_agregar_integrante.addEventListener('click', function(event) {
-				event.preventDefault();
-
-
-				agregarSeccion(seccion_a_clonar, seccion_padre_agregar_integrante);
-				
-				
-			})
-
-
 
 
 
@@ -3805,140 +918,7 @@
 			let contador = 1;
 
 
-			//FUNCION QUE AGREGA SECCION  DE AÑADIR INTEGRANTE Y RECIBE LA SECCION A CLONAR Y EL ELEMENTO PADRE
 
-			function agregarSeccion(seccion, elemento_Padre){
-
-				let seccion_clonada = seccion.cloneNode(true);
-				
-				seccion_clonada.id = "persona"+contador;
-
-
-				//FUNCION QUE LE DA UN NAME DIFERENTE A LOS RADIO CONTENIDOS EN LA SECCION CLONADA
-
-
-				{
-
-				function cambiarNombreGruposRadio(seccion_clonada) {
-					// Obtener todos los elementos de tipo radio
-					let radios = seccion_clonada.querySelectorAll('input[type="radio"]');
-					
-					// Objeto para almacenar los grupos de radios
-					let gruposDeRadios = {};
-
-					// Iterar sobre los elementos de tipo radio y agruparlos por su atributo name actual
-					radios.forEach(function(radio) {
-						let nombreActual = radio.getAttribute('name');
-						
-						if (!gruposDeRadios[nombreActual]) {
-							gruposDeRadios[nombreActual] = [];
-						}
-						
-						gruposDeRadios[nombreActual].push(radio);
-					});
-
-					// Cambiar el atributo name de cada grupo de radios
-					for (let nombreActual in gruposDeRadios) {
-						// Generar un nuevo nombre para el grupo (por ejemplo, agregar un sufijo)
-						let nuevoNombre = nombreActual +"_"+ seccion_clonada.id;
-
-						// Cambiar el atributo name de cada radio en el grupo
-						gruposDeRadios[nombreActual].forEach(function(radio) {
-							radio.setAttribute('name', nuevoNombre);
-						});
-					}
-				}
-
-				// Llamar a la función para cambiar los nombres de los grupos de radios
-				cambiarNombreGruposRadio(seccion_clonada);
-
-				}
-
-
-				//FUNCION QUE LE DA UN NAME DIFERENTE A LOS CHECKBOX CONTENIDOS EN LA SECCION CLONADA
-
-				{
-					function cambiarNombreGruposCheckbox(seccion_clonada) {
-						// Obtener todos los elementos de tipo checkbox dentro de la sección clonada
-						var checkboxes = seccion_clonada.querySelectorAll('input[type="checkbox"]');
-						
-						// Objeto para almacenar los grupos de checkboxes
-						var gruposDeCheckboxes = {};
-
-						// Iterar sobre los elementos de tipo checkbox y agruparlos por su atributo name actual
-						checkboxes.forEach(function(checkbox) {
-							var nombreActual = checkbox.getAttribute('name');
-							
-							if (!gruposDeCheckboxes[nombreActual]) {
-								gruposDeCheckboxes[nombreActual] = [];
-							}
-							
-							gruposDeCheckboxes[nombreActual].push(checkbox);
-						});
-
-						// Cambiar el atributo name de cada grupo de checkboxes
-						for (var nombreActual in gruposDeCheckboxes) {
-							// Generar un nuevo nombre para el grupo (por ejemplo, agregar un sufijo)
-							var nuevoNombre = nombreActual + "_" + seccion_clonada.id;
-
-							// Cambiar el atributo name de cada checkbox en el grupo
-							gruposDeCheckboxes[nombreActual].forEach(function(checkbox) {
-								checkbox.setAttribute('name', nuevoNombre);
-							});
-						}
-					}
-
-					// Llamar a la función para cambiar los nombres de los grupos de checkboxes
-					cambiarNombreGruposCheckbox(seccion_clonada);
-
-				}
-
-
-
-
-
-
-				seccion_clonada.style.display = 'block';
-				
-				elemento_Padre.appendChild(seccion_clonada);
-
-
-				let btn_hijo = seccion_clonada.querySelector('.btn_eliminar_integrante');
-				btn_hijo.addEventListener('click', function(event){
-					event.preventDefault();
-					eliminar_Padre(this.parentNode)
-					
-					
-				})
-
-				contador += 1;
-
-			}
-
-
-
-
-
-
-			function eliminar_Padre (elemento) {
-				let padre = elemento.parentNode;
-				if (padre) {
-					
-					padre.remove();
-				}else {
-					console.log("El elemento no tiene padre");
-				}
-			}
-
-
-
-
-
-
-
-
-
-			
 
 
 			//FUNCION QUE OBTIENE LA HORA HACIENDO USO DEL OBJETO DATE Y EL METODO toLocaleString
@@ -3968,74 +948,8 @@
 
 
 
-			//CODIGO QUE COMPRUEBA SI 
-
-			latitud.addEventListener('input', function(event) {
-				let latitud = event.target.value;
 		
-				if (isNaN(latitud) || latitud < -90 || latitud > 90) {
-					alert('Por favor, ingrese una latitud válida.');
-					latitud.value = "";
-				}
-			});
 
-			longitud.addEventListener('input', function(event) {
-			let longitud = event.target.value;
-			
-			if (isNaN(longitud) || longitud < -180 || longitud > 180) {
-				alert('Por favor, ingrese una longitud válida.');
-				longitud.value = "";
-			}
-			});
-
-
-
-			const btn_obtener_coordenadas = document.getElementById('btn_obtener_coordenadas');
-
-			btn_obtener_coordenadas.addEventListener('click', function(event) {
-				event.preventDefault();
-
-
-				obtenerUbicacionDD().then(ubicacion => {
-
-				latitud.value = ubicacion.latitud;
-				longitud.value = ubicacion.longitud;
-				console.log(ubicacion.latitud);
-				
-				console.log(ubicacion.longitud)
-				}).catch(error => {
-				console.log(error);
-				});
-				
-			})
-			
-
-
-
-			//FUNCION QUE OBTIENE LA UBICACION
-
-
-			function obtenerUbicacionDD() {
-			return new Promise((resolve, reject) => {
-				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(function(position) {
-						let latitud = position.coords.latitude;
-						let longitud = position.coords.longitude;
-						latitud = latitud.toFixed(6);
-						longitud = longitud.toFixed(6);
-
-						resolve({
-							"latitud": latitud,
-							"longitud": longitud,
-						});
-					}, function(error) {
-						reject(error);
-					});
-				} else {
-					reject("La geolocalización no es compatible con este navegador.");
-				}
-			});
-	}
 
 
 
@@ -4070,12 +984,11 @@
 
 
 		})
-	</script>
-
-	<!-- <script type="text/javascript" src="./script.js"> -->
 
 
 	</script>
+		
+
+	
 </body>
-
 </html>
